@@ -1,0 +1,215 @@
+@use '../../asstes/css/variables.scss' as helpers;
+
+footer {
+
+    box-sizing: border-box;
+
+
+
+    .main-footer-container {
+        display: flex;
+        background-color: helpers.$secondaryColor;
+        padding-top: 20px;
+        padding: 20px  helpers.$globalPadding;
+        .row{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .col {
+            flex: 0 0 33.333333%;
+            max-width: 32.333333%;
+        }
+
+        .col-middle {
+            width: 20%;
+        }
+
+        .footer-contact {
+            &-mail {
+                font-size: 15px;
+                line-height: 3em;
+                color: helpers.$white-color;
+                position: relative;
+                display: inline-block;
+
+                &::before {
+                    position: absolute;
+                    bottom: 9px;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background-color: helpers.$mainColor;
+                    content: "";
+
+                }
+            }
+
+            &-phone {
+                font-family: 'Jost', sans-serif;
+                font-size: 24px;
+                color: helpers.$white-color;
+                font-weight: 400;
+                display: block;
+                -webkit-transition: all 500ms ease;
+                transition: all 500ms ease;
+            }
+
+            &-text {
+                font-size: 15px;
+                margin: 0;
+                color: #adadad;
+                padding-bottom: 20px;
+            }
+
+            &-social-list {
+                a {
+                    .svg-inline--fa {
+                        font-size: 15;
+                        color: helpers.$white-color;
+                        transition: all 500ms ease;
+
+                        &:hover {
+                            color: helpers.$mainColor;
+                        }
+                    }
+                }
+
+                a {
+                    + {
+                        a {
+                            margin-left: 15px;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+        .footer-explore {
+            &-list {
+                padding: 0;
+
+                li {
+                    a {
+                        position: relative;
+                        display: block;
+                        font-size: 15px;
+                        color: #adadad;
+                        -webkit-transition: all 500ms ease;
+                        transition: all 500ms ease;
+
+                        &:hover {
+                            padding-left: 15px;
+                        }
+
+                        &::before {
+
+                            position: absolute;
+                            top: 55%;
+                            left: 0;
+                            bottom: 0;
+                            width: 6px;
+                            height: 6px;
+                            content: "";
+                            background-color: helpers.$mainColor;
+                            -webkit-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            opacity: 0;
+                            border-radius: 50%;
+                            transition: all 500ms ease;
+                            transition: all 500ms ease;
+
+                        }
+                    }
+
+                    a:hover:before {
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+
+
+        .footer-title {
+            font-size: 24px;
+            color: helpers.$white-color;
+            margin-bottom: 20px;
+        }
+
+
+        .bottom-line-footer {
+            background-color: helpers.$secondaryColor2;
+            height: 50px;
+            padding:20px  helpers.$globalPadding;
+
+        }
+
+    }
+
+    .bottom-line-footer {
+        background-color: helpers.$secondaryColor2;
+        padding:20px  helpers.$globalPadding;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        p {
+            a {
+                color: helpers.$white-color;
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        .main-footer-container {
+            .row {
+                flex-direction: column;
+
+                .col {
+                    min-width: 100%;
+                    flex: unset;
+                    .footer-about{
+                        padding-bottom: 20px;
+                    }
+                    .footer-contact-social-list {
+                        a {
+                            .svg-inline--fa {
+                                font-size: 25px;
+                                color: helpers.$white-color;
+                                transition: all 500ms ease;
+        
+                                &:hover {
+                                    color: helpers.$mainColor;
+                                }
+                            }
+                        }
+        
+                        a {
+                            + {
+                                a {
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+        
+                    }
+                    
+                }
+
+                .col-middle {
+                   width: 100%;
+                }
+            }
+        }
+    }
+}

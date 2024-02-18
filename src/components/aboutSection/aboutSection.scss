@@ -1,0 +1,97 @@
+$color_1: #222;
+$color_2: #666;
+$color_3: #80CC82;
+$font-family_1: Kraimorie;
+@use '../../asstes/css/variables.scss' as helpers;
+
+.section-padding {
+	padding: 120px helpers.$globalPadding;
+	;
+}
+
+.containerm {
+	padding: 0 5%
+}
+
+.about-content {
+	margin-bottom: 30px;
+	max-width: 50%;
+}
+
+.first-image {
+	margin-top: 90px;
+	margin-right: 10px;
+}
+
+.col-md-3 {
+	padding: 0 15px;
+}
+
+.reservations {
+	.textAb {
+		a {
+			font-size: 24px;
+			color:helpers.$mainColor;
+			font-family: $font-family_1;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+.about {
+	.row {
+		display: flex;
+		justify-content: center;
+	}
+
+	.section-title {
+		font-size: 45px;
+		font-family: $font-family_1;
+		font-weight: 400;
+		color: $color_1;
+		position: relative;
+		margin-bottom: 20px;
+		line-height: 1.25em;
+	}
+
+	.section-subtitle {
+		font-size: 15px;
+		font-family: $font-family_1;
+		font-weight: 400;
+		color: helpers.$thirdColor;
+		text-transform: uppercase;
+		position: relative;
+		letter-spacing: 6px;
+		margin-bottom: 5px;
+	}
+
+	.container img {
+		width: 25%;
+		object-fit: contain;
+	}
+}
+
+@media (max-width: 1000px) {
+
+	.about {
+		.row {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.about-content {
+			margin-bottom: 30px;
+			max-width: 100%;
+		}
+
+		.container img {
+			width: 40vw;
+		}
+		.first-image {
+			margin-right:5%
+		}
+		.second-image{
+			margin-bottom: 90px;
+		}
+	}
+
+}

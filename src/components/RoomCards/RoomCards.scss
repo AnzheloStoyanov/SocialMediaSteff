@@ -1,0 +1,183 @@
+@use '../../asstes/css/variables.scss' as helpers;
+@import '../../asstes/css/mixins';
+
+.room-card {
+    position: relative;
+    margin: 0;
+    max-width: 1200px;
+    margin-bottom: 90px;
+
+    figure {
+        position: relative;
+        width: 66.666667%;
+        margin-left: auto;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: all 500ms ease;
+
+            &:hover {
+                transform: scale(0.98);
+
+            }
+        }
+    }
+
+    .caption {
+        background: helpers.$white-color;
+        @include absolute($top: 50%, $left: 0);
+        position: absolute;
+        width: 50%;
+        padding: 4% 4% 4% 0;
+        transform: translate(0, -50%);
+
+        h3 {
+            font-size: helpers.$font-size-xxl;
+            color: helpers.$mainColor;
+            margin-bottom: 0px;
+
+            span {
+                font-size: 15px;
+                color: helpers.$thirdColor;
+            }
+
+            ;
+        }
+
+        h4 {
+            font-size: helpers.$font-size-2xl;
+            color: helpers.$secondaryColor;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: helpers.$font-size-md;
+            font-weight: 400;
+            line-height: 1.75em;
+            color: helpers.$thirdColor;
+            margin-bottom: 20px;
+        }
+    }
+
+    .caption.caption-mirroed {
+        left: auto;
+        right: 0;
+        background: #fff;
+        padding: 4% 0 4% 4%;
+    }
+
+    .room-facilities {
+        display: flex;
+        flex-wrap: wrap;
+
+        ul {
+            li {
+                padding-bottom: 10px;
+            }
+        }
+
+        &__col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        svg {
+            margin-right: 10px;
+            color: #80CC82;
+            font-size: 20px;
+        }
+    }
+
+    hr {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #ececec;
+    }
+
+    .info-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .room-card {
+        position: relative;
+        margin: 0;
+        max-width: 1200px;
+        margin-bottom: 90px;
+
+        figure {
+            position: relative;
+            width: 50%;
+            margin-left: auto;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                transition: all 500ms ease;
+
+                &:hover {
+                    transform: scale(0.98);
+
+                }
+            }
+        }
+
+        .info-wrapper {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .room-card {
+
+
+        figure {
+            width: auto;
+            margin: 0;
+
+
+        }
+
+        .info-wrapper {
+            flex-direction: row;
+        }
+
+        .caption {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: auto;
+            padding: 30px 20px;
+            transform: translate(0, 0);
+        }
+
+    }
+}
+
+@media (max-width: 590px) {
+    .room-card {
+        .info-wrapper {
+            flex-direction: column;
+        }
+
+        .room-facilities {
+            flex-direction: column;
+
+            &__col {
+                max-width: 100%;
+                flex: none;
+                ul{
+                    padding:unset;
+                }
+            }
+
+        }
+    }
+}

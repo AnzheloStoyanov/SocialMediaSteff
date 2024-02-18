@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Kraimorie';
+    src: url('../../asstes/fonts/92zPtBhPNqw79Ij1E865zBUv7myRJTVFNIg8mg.woff2')
+}
+    
+
+
+  
+  .fader {
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .fader__slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-duration: 1.9s;
+    z-index: 0;
+
+
+  }
+  
+  .fader img {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  
+  .fader__slide .text {
+      z-index: 101;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 50px;
+    
+  }
+  
+
+
+ /* ~~~~~~~ INIT. BTN ~~~~~~~ */
+
+.btn {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+     font-family: 'Kraimorie';
+	color: var(--inv);
+	font-family: 'Jost', sans-serif;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: var(--def);
+	transition-delay: .5s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: var(--inv);
+	transition-delay: .35s;
+}
+
+
+
+/* From Right */
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-right:before {
+	left: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+
+
+
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+/* *, *:before, *:after {
+	box-sizing: border-box;
+} */
+
+body {
+	--def: #96B7C4; 	
+	--inv: #fff;
+}
+
+
+.header{
+    position: relative;
+    margin-bottom: 20px;
+    font-family: 'Kraimorie';
+    font-size: 55px;
+    text-transform: uppercase;
+    line-height: 1.35em;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 7px;
+    text-align: center;
+    overflow-wrap: break-word; /* Allows breaking within words */
+  white-space: pre-wrap; 
+  padding: 0 300px;
+}
+
+.back-ground{
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2
+}
+.text h4{
+    font-family: Kraimorie;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+.text {
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .text h4 {
+    font-family: Kraimorie;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.text {
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+@media (max-width: 1000px) {
+  .header{
+    font-size: 25px;
+  }
+}

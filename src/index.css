@@ -1,0 +1,52 @@
+@use '../../asstes/css/variables.scss' as helpers;
+
+
+
+@font-face {
+    font-family: SocialMediaFont;
+    src: url('./asstes/fonts/Jost-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    -webkit-user-drag: none;
+    font-family: SocialMediaFont;
+}
+
+body {
+    margin: 0 !important;
+    background: #FFFBFB;
+}
+
+p {
+    font-family: SocialMediaFont;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    font-size: 45px;
+    font-family: Mon;
+    font-weight: 400;
+    color: #222;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    font-family: Mon;
+    font-weight: 400;
+    color:  #666;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,58 @@
+@use '../../asstes/css/variables.scss' as helpers;
+@import '../../asstes/css/mixins';
+.butn-dark {
+    cursor: pointer;
+    position: relative;
+    line-height: 1.2em;
+    display: flex;
+
+    a {
+        font-weight: 800;
+        text-transform: uppercase;
+        background: helpers.$yellowColor;
+        color: helpers.$blackColor;
+        padding: 13px 22px;
+        margin: 0;
+        position: relative;
+        font-size: 22px;
+        border-radius: 22px;
+        &::after{
+            content: '';
+            @include absolute($left: 100%, $bottom: 0);
+            width: 0;
+            height: 100%;
+            z-index: 1;
+            background: helpers.$blackColor;
+            color: helpers.$white-color;
+            border-radius: 22px;
+            transition: all 0.3s ease;
+        }
+        span{
+            position: relative;
+            z-index: 2;
+        }
+        &:hover:after {
+            width: 100%;
+            left: 0;
+            transition: width 0.3s ease;
+          }
+    }
+}
+.butn-light{
+    display: flex;
+}
+.butn-light a {
+    display: flex;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    color: #000;
+    padding: 12px 20px;
+    margin: 0;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border: 1px solid rgba(34, 34, 34,0.5);
+}

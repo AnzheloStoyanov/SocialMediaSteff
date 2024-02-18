@@ -1,0 +1,87 @@
+@use '../../asstes/css/variables.scss' as helpers;
+@import '../../asstes/css/mixins';
+
+// .form {
+//     -webkit-box-flex: 0;
+//     -ms-flex: 0 0 41.666667%;
+//     flex: 0 0 41.666667%;
+//     max-width: 41.666667%;
+// }
+.form {
+
+    font-size: helpers.$font-size-xxl ;
+    color: helpers.$secondaryColor;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .form-group {
+            margin-bottom: 1rem;
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 15px;
+
+         
+        }
+        .from-bottom-section {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+    }
+
+}
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="file"],
+textarea {
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    height: auto;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-width: 0 0 1px;
+    border-style: solid;
+    display: block;
+    width: 100%;
+    line-height: 1.5em;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    background-image: none;
+    border-bottom: 1px solid #ececec;
+    border-color: ease-in-out .15s, box-shadow ease-in-out .15s;
+
+    &::selection {
+        color: #fff;
+        background: #80CC82;
+    }
+
+}
+
+input:focus,
+textarea:focus-visible {
+    border-bottom-width: 1px;
+    border-color: #80CC82;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom-width: 1px;
+    border-color: #80CC82;
+}
+
+@media (max-width: 1000px) {
+.form .row .form-group {
+    max-width: 100%;
+    padding: 0;
+}
+}

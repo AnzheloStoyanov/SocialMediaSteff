@@ -1,0 +1,127 @@
+
+@use '../../asstes/css/variables.scss' as helpers;
+$font-family_1: Kraimorie;
+$font-family_2: Mon;
+
+.testelmonials-container {
+	background: url('https://www.kraimoriepark.com/img/slider/3.jpg');
+	min-height: 500px;
+	width: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 1;
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        content: "";
+       }
+}
+.slider-cont-kra {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.containerT {
+	top: 0;
+	display: flex;
+	width: -webkit-fill-available;
+	width: -moz-available;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 125px 10%  0;
+    .keen-slider__slide{
+        width: 100%;
+        min-width: none;
+        
+    }
+}
+.head-box {
+    width: 50%;
+	h6 {
+		font-family: $font-family_1;
+		color: helpers.$white-color;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	h4 {
+		font-size: 32px;
+		font-family: $font-family_1;
+		font-weight: 400;
+		color: helpers.$white-color;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+}
+.head-testemoials{
+    width: 50%;
+}
+.testelmonials {
+	position: relative;
+  
+}
+.itemM {
+	margin-bottom: 30px;
+	position: relative;
+	width: 80%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+	padding: 0 15px;
+	.quote {
+		position: absolute;
+		right: 20px;
+		top: 90px;
+		width: 70px;
+		margin: 0 auto 30px;
+		opacity: .1;
+	}
+	p {
+		color: helpers.$white-color;
+		font-family: $font-family_2;
+	}
+	.info {
+		text-align: left;
+		margin: 30px 0 15px 0;
+		h6 {
+			font-size: 15px;
+			margin-bottom: 0px;
+			padding-top: 0px;
+			font-weight: 400;
+			font-family: $font-family_2;
+			color: helpers.$white-color;
+			line-height: 1em;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+		>* {
+			font-family: $font-family_1;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+
+	.head-testemoials{
+        width: 100%;
+    }
+    .head-box {
+        width: 100%;
+    }
+    .testelmonials-container {
+    .containerT {
+    .keen-slider__slide{
+    
+    display: flex;
+    justify-content: center;
+}}
+}
+}

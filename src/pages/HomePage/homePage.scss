@@ -1,0 +1,288 @@
+@use '../../asstes/css/variables.scss' as helpers;
+
+.homepage-container {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10%;
+
+  >div {
+    width: 100%;
+    color: helpers.$blackColor;
+    display: flex;
+    flex-direction: column;
+
+    >p {
+      display: flex;
+    }
+
+    .heart {
+      width: 60px;
+      align-self: flex-end;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: 900;
+      display: flex;
+    }
+
+    .mainTitle {
+      font-size: 90px;
+      line-height: 90px;
+
+    }
+
+    .tiktok {
+      font-size: 110px;
+      line-height: 110px;
+
+    }
+
+
+    >div {
+      display: flex;
+
+      h6 {
+        font-size: 27px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+.home-page-more-container {
+  padding: 0 10%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.home-page-more {
+  font-size: 28px;
+
+  >strong {
+    margin-right: 10px;
+  }
+}
+
+.why-tiktok {
+  background-color: helpers.$pinkColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10% 80px;
+
+  h1 {
+    font-size: 110px;
+    color: #FFFBFB;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    strong {
+      color: #DDE468;
+      font-weight: 900;
+
+    }
+  }
+
+  .why-tiktok-inner-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .why-tiktok-righ-side {
+      width: 46%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      p {
+        color: #FFFBFB;
+        text-align: end;
+        font-size: 20px;
+      }
+    }
+
+    img {
+      width: 24%;
+      height: fit-content;
+    }
+
+    h3 {
+      font-size: 58px;
+      color: #FFFBFB;
+      font-weight: 800;
+
+      strong {
+        color: #DDE468;
+      }
+    }
+  }
+}
+.short-form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 10%;
+  background-color:#FFFBFB ;
+  h1{
+    color: #DDE468;
+    font-size: 110px;
+    font-weight: 900;
+  }
+  h3{
+    color: #37343A;
+    font-size: 30px;
+  }
+}
+.round-bottom {
+  border-bottom-left-radius: 50% 150px !important;
+  border-bottom-right-radius: 50% 150px !important;
+  width: 100%;
+  background-color: #FFFBFB;
+  height: 90px;
+}
+
+.container-shape {
+  width: 100%;
+  height: 100px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  background-color: helpers.$pinkColor;
+}
+
+@media (max-width: 1750px) {
+  .homepage-container {
+    >div {
+      .mainTitle {
+        font-size: 70px;
+        line-height: 70px;
+      }
+
+      .tiktok {
+        font-size: 80px;
+        line-height: 80px;
+      }
+    }
+  }
+
+  .why-tiktok {
+    h1 {
+      font-size: 80px;
+      color: #FFFBFB;
+      text-transform: uppercase;
+      font-weight: 900;
+
+      strong {
+        color: #DDE468;
+        font-weight: 900;
+
+      }
+    }
+
+    .why-tiktok-inner-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .why-tiktok-righ-side {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        p {
+          font-size: 18px;
+        }
+
+        h3 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+  .short-form-container{
+    h1{
+      font-size: 80px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .homepage-container {
+    >div {
+      .mainTitle {
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      .tiktok {
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .why-tiktok {
+    h1 {
+      font-size: 60px;
+      color: #FFFBFB;
+      text-transform: uppercase;
+      font-weight: 900;
+
+      strong {
+        color: #DDE468;
+        font-weight: 900;
+
+      }
+    }
+
+    .why-tiktok-inner-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .why-tiktok-righ-side {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        p {
+          font-size: 16px;
+        }
+
+        h3 {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+
+  .home-page-more {
+    font-size: 18px;
+
+    >strong {
+      margin-right: 10px;
+    }
+  }
+  .short-form-container{
+    h1{
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+}

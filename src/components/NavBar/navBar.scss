@@ -1,0 +1,46 @@
+@use '../../asstes/css/variables.scss' as helpers;
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+  }
+  
+li {
+    margin-right: 26px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    word-wrap: break-word;
+    a{
+        font-family: Kraimorie;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: helpers.$blackColor;
+        margin: 3px;
+        -webkit-transition: all .4s;
+        transition: all .4s;
+        &:hover{
+            color: helpers.$pinkColor;
+        }
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .navbar-nav {
+    flex-direction: column;
+    li {
+        padding: 10px 0;
+        a{
+            color: helpers.$blackColor;
+            font-size: 18px;
+        }
+    }
+}
+  }
