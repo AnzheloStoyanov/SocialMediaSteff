@@ -1,0 +1,14 @@
+.keen-slider:not([data-keen-slider-disabled]){
+  align-items: center;
+}
+.keen-slider__slide{
+  img{
+    object-fit: contain;
+    max-height: 100px;
+    filter: grayscale(1);
+    &:hover{
+      filter: none;
+    }
+  }
+
+}

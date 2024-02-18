@@ -11,7 +11,6 @@ export default function Sliders({images,height,navigate})  {
   const [sliderRef] = useKeenSlider({
     slides: images.length,
     loop: true,
-    preventDefaultSwipeY: false,
   },
   [
    

@@ -235,6 +235,7 @@
 
       h5 {
         font-size: 25px;
+        color: #37343A;
       }
     }
   }
@@ -293,6 +294,7 @@
 
       h6 {
         font-size: 28px;
+        color: #37343A;
       }
 
       .spacer {
@@ -381,7 +383,82 @@
     width: 68%;
   }
 }
-
+.home-page-banner{
+  background-color: #DDE468;
+  padding:10px 10%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      font-size: 110px;
+      line-height: 110px;
+      color: #FFFBFB;
+    }
+    h3{
+      font-size: 50px;
+      line-height: 50px;
+      color: #37343A;
+    }
+  }
+}
+.home-page-brands{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  .brands-title{
+    display: flex;
+    align-items: baseline;
+    color: #37343A;
+    h1{
+      font-size: 90px;
+      font-weight: 900;
+    }
+    h3{
+      font-size: 50px;
+      font-weight: 400;
+    }
+  }
+}
+.home-page-results{
+  padding:10px 10%;
+  height: 578px;
+  background-color: helpers.$pinkColor;
+  margin-bottom: 200px;
+  .home-page-results-title{
+    display: flex;
+    align-items: baseline;
+    img{
+     width: 5vw;
+     height: 5vw;
+    }
+    h1{
+      font-size: 90px;
+      font-weight: 800;
+      line-height: 90px;
+      color: #FFFBFB;
+      margin-right: 20px;
+    }
+    h3{
+      font-size: 57px;
+      line-height: 57px;
+      color: #DDE468;
+    }
+  }
+  .video-container{
+    display: flex;
+    justify-content: space-between;
+    >video{
+      width: 22%;
+    }
+  }
+}
 @media (max-width: 1750px) {
   .homepage-container {
     >div {
@@ -462,6 +539,17 @@
   }
   .why-social-media > h4 h1 {
     font-size: 80px;
+  }
+  .home-page-banner > div h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .home-page-banner > div h3 {
+    font-size: 47px;
+    line-height: 47px;
+  }
+  .home-page-results .home-page-results-title h1 {
+    font-size: 70px;
   }
 }
 
@@ -555,6 +643,20 @@
     font-size: 60px;
   }
   .why-social-media > h4 {
+    font-size: 37px;
+  }
+  .home-page-banner > div h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .home-page-banner > div h3 {
+    font-size: 37px;
+    line-height: 37px;
+  }
+  .home-page-results .home-page-results-title h1 {
+    font-size: 50px;
+  }
+  .home-page-results .home-page-results-title h3 {
     font-size: 37px;
   }
 }

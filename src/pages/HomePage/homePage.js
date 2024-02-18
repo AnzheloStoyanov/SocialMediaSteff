@@ -11,10 +11,21 @@ import lamp from "../../asstes/images/lamp.png";
 import camera from "../../asstes/images/camera.png";
 import voice from "../../asstes/images/voice.png";
 import girl from "../../asstes/images/gitlWithPhone.png";
+import rock from "../../asstes/images/rock.png";
 import socialMediaSteff from "../../asstes/images/socialMediaSteff.jpg";
-
+import BrandSlider from "../../components/BrandSlider/BrandSlider";
+import video from "../../asstes/images/ssstik.io_1705837693230.mp4";
+import video2 from "../../asstes/images/video2.mp4";
+import video3 from "../../asstes/images/video3.mp4";
+import video4 from "../../asstes/images/video4.mp4";
 const HomePage = () => {
   const inputRef = useRef();
+  const brands = [
+    { name: "Brand 1", logo: "brand1.png" },
+    { name: "Brand 2", logo: "brand2.png" },
+    { name: "Brand 3", logo: "brand3.png" },
+    // Add more brands as needed
+  ];
 
   return (
     <>
@@ -205,20 +216,65 @@ const HomePage = () => {
         </h4>
         <p>
           Social Media Steff е бутикова видео маркетинг агенция, която създава
-          <strong>качествено видео съдържание</strong> за различни брандове с цел то да достига
-          <strong>до правилната аудитория абсолютно органично.</strong> <br/>
-          
-          Основното ни предимство
-          е, че <strong>доставяме цялостна услуга</strong> - от създаване на фундаментална
-          креативна стратегия през предложения за винаги trendy видеа до готов
-          за публикуване краен продукт, който потребителите да забележат.<br/>
-          
-          За нас
-          е важно да представим твоят бранд пред правилната аудитория чрез
-          правилното съдържание. <br/>
+          <strong>качествено видео съдържание</strong> за различни брандове с
+          цел то да достига
+          <strong>до правилната аудитория абсолютно органично.</strong> <br />
+          Основното ни предимство е, че{" "}
+          <strong>доставяме цялостна услуга</strong> - от създаване на
+          фундаментална креативна стратегия през предложения за винаги trendy
+          видеа до готов за публикуване краен продукт, който потребителите да
+          забележат.
+          <br />
+          За нас е важно да представим твоят бранд пред правилната аудитория
+          чрез правилното съдържание. <br />
           <strong>Без ненужен cringe.</strong>
         </p>
         <img src={socialMediaSteff}></img>
+      </div>
+      <div className="home-page-banner">
+        <div>
+          <h1>20М+</h1>
+          <h3>ГЛЕДАНИЯ</h3>
+        </div>
+        <div>
+          <h3>НАД</h3>
+          <h1>1000</h1>
+          <h3>СЪЗДАДЕНИ</h3>
+          <h3>ВИДЕА</h3>
+        </div>
+        <div>
+          <h1>900K+</h1>
+          <h3>ХАРЕСВАНИЯ</h3>
+        </div>
+      </div>
+      <div className="home-page-brands">
+        <div className="brands-title">
+          <h1>БРАНДОВЕ,</h1>
+          <h3>КОИТО НИ СЕ ДОВЕРИХА</h3>
+        </div>
+        <BrandSlider brands={brands}></BrandSlider>
+      </div>
+      <div className="home-page-results">
+        <div className="home-page-results-title">
+          <img src={rock}></img>
+          <h1>TIKTOK</h1>
+          <h3>РЕЗУЛТАТИ</h3>
+         
+        </div>
+        <div className="video-container">
+        <video className="home-page-results-video" autoPlay loop muted>
+            <source src={video} type="video/mp4" />
+          </video>
+          <video className="home-page-results-video" autoPlay loop muted>
+            <source src={video2} type="video/mp4" />
+          </video>
+          <video className="home-page-results-video" autoPlay loop muted>
+            <source src={video3} type="video/mp4" />
+          </video>
+          <video className="home-page-results-video" autoPlay loop muted>
+            <source src={video4} type="video/mp4" />
+          </video>
+        </div>
       </div>
     </>
   );
