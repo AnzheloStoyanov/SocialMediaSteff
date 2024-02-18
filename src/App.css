@@ -25,46 +25,11 @@ body {
 
   }
   
-  .back-door{
-    background: url('https://www.kraimoriepark.com/img/slider/2.jpg');
-    min-height: 500px;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-    }
-    .background-overlay{
-      background-color: rgba(0, 0, 0, 0.957);
-    }
-    @keyframes fadeInUp {
-      0% {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0%);
-        opacity: 1;
-      }
-    }
-    
-    .fadeInUp-animation {
-      animation: 1.5s fadeInUp;
-    }
 
-    /* FAcilities */
-
-  .col-md-4 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 32.333333%;
-}
 
 ::selection {
     color: #fff;
-    background: #80CC82;
+    background: #F9447F;
 }
 
 section{

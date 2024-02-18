@@ -11,7 +11,7 @@ const NavBar = ({ children, onClose }) => {
         </Link>
       </li>
       <li class="nav-item">
-        <Link to="/сervices">
+        <Link to="/services">
             Услуги
         </Link>
       </li>
