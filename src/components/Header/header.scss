@@ -79,4 +79,45 @@ header.sticky {
       height: 35px;
     }
   }
+  header .container.mainClass .rightSide {
+    align-items: center;
+  }
+  .container img {
+    top:unset;
+    left: unset;
+    position: relative;
+    width: 15vw;
+  }
+  header .container.mainClass .logo {
+    width: auto;
+    border-width: 0 0 1px 0;
+    border-color: #F9447F;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    justify-content: end;
+    padding-left: 8%;
+  }
+  header .container.mainClass .leftSide {
+    display: none;
+  }
+  header .container.mainClass {
+    gap: 0;
+  }
+  .homepage-container {
+    flex-direction: column-reverse;
+    .homepage-container img {
+      width: 100%;
+  }
+  }
+}
+@media (max-width: 720px) {
+  .container img {
+    top:unset;
+    left: unset;
+    position: relative;
+    width: 20vw;
+  }
 }

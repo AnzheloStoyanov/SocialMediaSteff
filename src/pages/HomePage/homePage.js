@@ -20,6 +20,20 @@ import video3 from "../../asstes/images/video3.mp4";
 import video4 from "../../asstes/images/video4.mp4";
 const HomePage = () => {
   const inputRef = useRef();
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const brands = [
     { name: "Brand 1", logo: "brand1.png" },
     { name: "Brand 2", logo: "brand2.png" },
@@ -32,12 +46,16 @@ const HomePage = () => {
       <div className="homepage-container">
         <div>
           <img className="heart" src={heart}></img>
-          <p>full service TikTok агенция</p>
-          <h4 className="mainTitle">БИЗНЕСЪТ ТИ</h4>
-          <div>
-            <h6>има място в</h6>
-            <h4 className="tiktok">tiktok</h4>
-          </div>
+          {!isMobile && (
+            <>
+              <p>full service TikTok агенция</p>
+              <h4 className="mainTitle">БИЗНЕСЪТ ТИ</h4>
+              <div>
+                <h6>има място в</h6>
+                <h4 className="tiktok">tiktok</h4>
+              </div>
+            </>
+          )}
           <div className="what-we-do">
             <p>Помагаме на бизнесите да стъпят на TikTok сцената, за да:</p>
             <p>
@@ -60,6 +78,18 @@ const HomePage = () => {
           </div>
         </div>
         <img src={bahur}></img>
+
+        {isMobile && (
+          <>
+            {" "}
+            <div className="ima-mqsto">
+              <h6>има място в</h6>
+              <h4 className="tiktok">tiktok</h4>
+            </div>
+            <h4 className="mainTitle">БИЗНЕСЪТ ТИ</h4>
+            <p>full service TikTok агенция</p>
+          </>
+        )}
       </div>
       <div className="home-page-more-container">
         <p className="home-page-more">
@@ -113,6 +143,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      {!isMobile
+      &&
+      <>
       <div className="short-form-container">
         <h1>SHORT FORM ВИДЕО</h1>
         <h3>КАКВО СЕДИ ЗАД КРАЙНИЯ РЕЗУЛТАТ</h3>
@@ -259,10 +292,9 @@ const HomePage = () => {
           <img src={rock}></img>
           <h1>TIKTOK</h1>
           <h3>РЕЗУЛТАТИ</h3>
-         
         </div>
         <div className="video-container">
-        <video className="home-page-results-video" autoPlay loop muted>
+          <video className="home-page-results-video" autoPlay loop muted>
             <source src={video} type="video/mp4" />
           </video>
           <video className="home-page-results-video" autoPlay loop muted>
@@ -276,6 +308,10 @@ const HomePage = () => {
           </video>
         </div>
       </div>
+      </>
+      }
+         
+    
     </>
   );
 };
