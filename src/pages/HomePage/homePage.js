@@ -143,174 +143,170 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      {!isMobile
-      &&
-      <>
-      <div className="short-form-container">
-        <h1>SHORT FORM ВИДЕО</h1>
-        <h3>КАКВО СЕДИ ЗАД КРАЙНИЯ РЕЗУЛТАТ</h3>
-        <div className="short-form-relative">
-          <div className="short-form-video">
-            <img className="short-form-img" src={shortForm} />
-            <div className="poiners poiners-one">
-              <div className="stick"></div>
-              <div className="ring">1</div>
-              <h5>КРЕАТИВНА СТРАТЕГИЯ</h5>
-            </div>
-            <div className="poiners poiners-two">
-              <h5>ИДЕИ И СКРИПТИРАНЕ</h5>
-              <div className="ring">2</div> <div className="stick"></div>
-            </div>
-            <div className="poiners poiners-three">
-              <div className="stick"></div>
-              <div className="ring">3</div>
-              <h5>СНИМАЧЕН ДЕН</h5>
-            </div>
-            <div className="poiners poiners-four">
-              <h5>ОБРАБОТКА И COPYWRITING</h5>
-              <div className="ring">4</div> <div className="stick"></div>
-            </div>
-            <div className="poiners poiners-five">
-              <div className="stick"></div>
-              <div className="ring">5</div>
-              <h5>УПРАВЛЕНИЕ НА ПРОФИЛА</h5>
-            </div>
-            <div className="poiners poiners-six">
-              <h5>АНАЛИЗ</h5>
-              <div className="ring">6</div> <div className="stick"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="home-services">
-        <div className="home-services-title">
-          <img src={tunder}></img>
-          <h1>УСЛУГИ</h1>
-        </div>
-        <div className="home-services-main-container">
-          <div>
-            <h6>Strategy & Conception</h6>
-            <p>
-              Всяка стратегия е изцяло персонализирана за нуждите и целите на
-              твоя бранд въз основа на доказано работещи практики в платформата
-              TikTok.
-            </p>
-            <div className="spacer"></div>
-            <div className="big-pink">
-              <div className="small-pink">
-                <img className="lamp" src={lamp}></img>
+          <>
+          <div className="short-form-container">
+            <h1>SHORT FORM ВИДЕО</h1>
+            <h3>КАКВО СЕДИ ЗАД КРАЙНИЯ РЕЗУЛТАТ</h3>
+            <div className="short-form-relative">
+              <div className="short-form-video">
+                <img className="short-form-img" src={shortForm} />
+                <div className="poiners poiners-one">
+                  <div className="stick"></div>
+                  <div className="ring">1</div>
+                  <h5>КРЕАТИВНА СТРАТЕГИЯ</h5>
+                </div>
+                <div className="poiners poiners-two">
+                  <h5>ИДЕИ И СКРИПТИРАНЕ</h5>
+                  <div className="ring">2</div> <div className="stick"></div>
+                </div>
+                <div className="poiners poiners-three">
+                  <div className="stick"></div>
+                  <div className="ring">3</div>
+                  <h5>СНИМАЧЕН ДЕН</h5>
+                </div>
+                <div className="poiners poiners-four">
+                  <h5>ОБРАБОТКА И COPYWRITING</h5>
+                  <div className="ring">4</div> <div className="stick"></div>
+                </div>
+                <div className="poiners poiners-five">
+                  <div className="stick"></div>
+                  <div className="ring">5</div>
+                  <h5>УПРАВЛЕНИЕ НА ПРОФИЛА</h5>
+                </div>
+                <div className="poiners poiners-six">
+                  <h5>АНАЛИЗ</h5>
+                  <div className="ring">6</div> <div className="stick"></div>
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div className="big-yellow">
-              <div className="small-yellow">
-                <img className="lamp" src={camera}></img>
+          <div className="home-services">
+            <div className="home-services-title">
+              <img src={tunder}></img>
+              <h1>УСЛУГИ</h1>
+            </div>
+            <div className="home-services-main-container">
+              <div>
+                <h6>Strategy & Conception</h6>
+                <p>
+                  Всяка стратегия е изцяло персонализирана за нуждите и целите на
+                  твоя бранд въз основа на доказано работещи практики в платформата
+                  TikTok.
+                </p>
+                <div className="spacer"></div>
+                <div className="big-pink">
+                  <div className="small-pink">
+                    <img className="lamp" src={lamp}></img>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="big-yellow">
+                  <div className="small-yellow">
+                    <img className="lamp" src={camera}></img>
+                  </div>
+                </div>
+                <div className="spacer-yellow"></div>
+                <h6>Content Creation</h6>
+                <p>
+                  Съдържанието, което създаваме за всеки бранд е винаги съобразено с
+                  таргет аудиторията, а не с "какво ще се хареса на масата".
+                </p>
+              </div>
+              <div>
+                <h6>Creator Marketing</h6>
+                <p>
+                  Ние сме връзката между бранда ти и новото поколение крийтъри,
+                  които аудиторията харесва и следи.
+                </p>
+                <div className="spacer"></div>
+                <div className="big-pink">
+                  <div className="small-pink">
+                    <img className="lamp" src={girl}></img>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="big-yellow">
+                  <div className="small-yellow">
+                    <img className="lamp" src={voice}></img>
+                  </div>
+                </div>
+                <div className="spacer-yellow"></div>
+                <h6>Content Creation</h6>
+                <p>
+                  Съдържанието, което създаваме за всеки бранд е винаги съобразено с
+                  таргет аудиторията, а не с "какво ще се хареса на масата".
+                </p>
               </div>
             </div>
-            <div className="spacer-yellow"></div>
-            <h6>Content Creation</h6>
-            <p>
-              Съдържанието, което създаваме за всеки бранд е винаги съобразено с
-              таргет аудиторията, а не с "какво ще се хареса на масата".
-            </p>
           </div>
-          <div>
-            <h6>Creator Marketing</h6>
+          <div className="why-social-media">
+            <h4>
+              ЗАЩО <h1> SOCIAL MEDIA STEFF?</h1>
+            </h4>
             <p>
-              Ние сме връзката между бранда ти и новото поколение крийтъри,
-              които аудиторията харесва и следи.
+              Social Media Steff е бутикова видео маркетинг агенция, която създава
+              <strong>качествено видео съдържание</strong> за различни брандове с
+              цел то да достига
+              <strong>до правилната аудитория абсолютно органично.</strong> <br />
+              Основното ни предимство е, че{" "}
+              <strong>доставяме цялостна услуга</strong> - от създаване на
+              фундаментална креативна стратегия през предложения за винаги trendy
+              видеа до готов за публикуване краен продукт, който потребителите да
+              забележат.
+              <br />
+              За нас е важно да представим твоят бранд пред правилната аудитория
+              чрез правилното съдържание. <br />
+              <strong>Без ненужен cringe.</strong>
             </p>
-            <div className="spacer"></div>
-            <div className="big-pink">
-              <div className="small-pink">
-                <img className="lamp" src={girl}></img>
-              </div>
+            <img src={socialMediaSteff}></img>
+          </div>
+          <div className="home-page-banner">
+            <div>
+              <h1>20М+</h1>
+              <h3>ГЛЕДАНИЯ</h3>
+            </div>
+            <div>
+              <h3>НАД</h3>
+              <h1>1000</h1>
+              <h3>СЪЗДАДЕНИ</h3>
+              <h3>ВИДЕА</h3>
+            </div>
+            <div>
+              <h1>900K+</h1>
+              <h3>ХАРЕСВАНИЯ</h3>
             </div>
           </div>
-          <div>
-            <div className="big-yellow">
-              <div className="small-yellow">
-                <img className="lamp" src={voice}></img>
-              </div>
+          <div className="home-page-brands">
+            <div className="brands-title">
+              <h1>БРАНДОВЕ,</h1>
+              <h3>КОИТО НИ СЕ ДОВЕРИХА</h3>
             </div>
-            <div className="spacer-yellow"></div>
-            <h6>Content Creation</h6>
-            <p>
-              Съдържанието, което създаваме за всеки бранд е винаги съобразено с
-              таргет аудиторията, а не с "какво ще се хареса на масата".
-            </p>
+            <BrandSlider brands={brands}></BrandSlider>
           </div>
-        </div>
-      </div>
-      <div className="why-social-media">
-        <h4>
-          ЗАЩО <h1> SOCIAL MEDIA STEFF?</h1>
-        </h4>
-        <p>
-          Social Media Steff е бутикова видео маркетинг агенция, която създава
-          <strong>качествено видео съдържание</strong> за различни брандове с
-          цел то да достига
-          <strong>до правилната аудитория абсолютно органично.</strong> <br />
-          Основното ни предимство е, че{" "}
-          <strong>доставяме цялостна услуга</strong> - от създаване на
-          фундаментална креативна стратегия през предложения за винаги trendy
-          видеа до готов за публикуване краен продукт, който потребителите да
-          забележат.
-          <br />
-          За нас е важно да представим твоят бранд пред правилната аудитория
-          чрез правилното съдържание. <br />
-          <strong>Без ненужен cringe.</strong>
-        </p>
-        <img src={socialMediaSteff}></img>
-      </div>
-      <div className="home-page-banner">
-        <div>
-          <h1>20М+</h1>
-          <h3>ГЛЕДАНИЯ</h3>
-        </div>
-        <div>
-          <h3>НАД</h3>
-          <h1>1000</h1>
-          <h3>СЪЗДАДЕНИ</h3>
-          <h3>ВИДЕА</h3>
-        </div>
-        <div>
-          <h1>900K+</h1>
-          <h3>ХАРЕСВАНИЯ</h3>
-        </div>
-      </div>
-      <div className="home-page-brands">
-        <div className="brands-title">
-          <h1>БРАНДОВЕ,</h1>
-          <h3>КОИТО НИ СЕ ДОВЕРИХА</h3>
-        </div>
-        <BrandSlider brands={brands}></BrandSlider>
-      </div>
-      <div className="home-page-results">
-        <div className="home-page-results-title">
-          <img src={rock}></img>
-          <h1>TIKTOK</h1>
-          <h3>РЕЗУЛТАТИ</h3>
-        </div>
-        <div className="video-container">
-          <video className="home-page-results-video" autoPlay loop muted>
-            <source src={video} type="video/mp4" />
-          </video>
-          <video className="home-page-results-video" autoPlay loop muted>
-            <source src={video2} type="video/mp4" />
-          </video>
-          <video className="home-page-results-video" autoPlay loop muted>
-            <source src={video3} type="video/mp4" />
-          </video>
-          <video className="home-page-results-video" autoPlay loop muted>
-            <source src={video4} type="video/mp4" />
-          </video>
-        </div>
-      </div>
-      </>
-      }
-         
+          <div className="home-page-results">
+            <div className="home-page-results-title">
+              <img src={rock}></img>
+              <h1>TIKTOK</h1>
+              <h3>РЕЗУЛТАТИ</h3>
+            </div>
+            <div className="video-container">
+              <video className="home-page-results-video" autoPlay loop muted>
+                <source src={video} type="video/mp4" />
+              </video>
+              <video className="home-page-results-video" autoPlay loop muted>
+                <source src={video2} type="video/mp4" />
+              </video>
+              <video className="home-page-results-video" autoPlay loop muted>
+                <source src={video3} type="video/mp4" />
+              </video>
+              <video className="home-page-results-video" autoPlay loop muted>
+                <source src={video4} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          </>
     
     </>
   );

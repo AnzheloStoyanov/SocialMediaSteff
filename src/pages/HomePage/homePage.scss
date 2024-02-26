@@ -615,10 +615,12 @@
   .short-form-container {
     h1 {
       font-size: 60px;
+      text-align: center;
     }
 
     h3 {
       font-size: 20px;
+      text-align: center;
     }
   }
 
@@ -668,17 +670,17 @@
 
   .short-form-container .short-form-relative .poiners-two {
     top: 20%;
-    transform: translate(-377px, 10px);
+    transform: translate(-100%, 10px);
   }
 
   .short-form-container .short-form-relative .poiners-four {
     top: 40%;
-    transform: translate(-422px, 10px);
+    transform: translate(-100%, 10px);
   }
 
   .short-form-container .short-form-relative .poiners-six {
     top: 60%;
-    transform: translate(-243px, 10px);
+    transform: translate(-100%, 10px);
   }
 }
 @media (max-width: 1000px) {
@@ -737,6 +739,14 @@
 .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side p {
   text-align: center;
 }
+.short-form-container .short-form-relative .poiners .stick {
+  width: 2vw;
+ 
+}
+.short-form-container h1 {
+  font-size: 50px;
+}
+
 }
 @media (max-width: 480px) {
   .homepage-container .mainTitle {
@@ -764,5 +774,62 @@
     color: #FFFBFB;
     text-transform: uppercase;
     font-weight: 900;
+  }
+}
+@media (max-width: 750px) {
+  .short-form-container .short-form-relative .short-form-video {
+    width: 54%;
+  }
+  .short-form-container .short-form-relative .poiners {
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    &-one {
+      top: 10%;
+      transform: translate(0%, 10px);
+      left: 76%;
+    }
+
+   
+
+    &-three {
+      top: 30%;
+      transform: translate(0%, 10px);
+      left: 76%;
+    }
+
+    
+
+    &-five {
+      top: 50%;
+      transform: translate(0%, 10px);
+      left: 76%;
+    }
+
+  
+    .ring {
+      width: 40px;
+      height: 40px;
+      background: helpers.$pinkColor;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFBFB;
+    }
+
+    h5 {
+      font-size: 10px;
+      color: #37343A;
+      max-width: 16vw
+    }
+  }
+  .short-form-container h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .short-form-container .short-form-relative {
+    transform: scale(0.7);
   }
 }
