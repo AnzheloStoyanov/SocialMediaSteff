@@ -220,7 +220,7 @@ const HomePage = () => {
                   таргет аудиторията, а не с "какво ще се хареса на масата".
                 </p>
               </div>
-              <div>
+              <div className="reverse-col">
                 <h6>Creator Marketing</h6>
                 <p>
                   Ние сме връзката между бранда ти и новото поколение крийтъри,
@@ -233,7 +233,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="reverse-col">
                 <div className="big-yellow">
                   <div className="small-yellow">
                     <img className="lamp" src={voice}></img>

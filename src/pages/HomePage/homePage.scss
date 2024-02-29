@@ -1,14 +1,17 @@
 @use '../../asstes/css/variables.scss' as helpers;
-.right-side-pointers{
+
+.right-side-pointers {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-.left-side-pointers{
+
+.left-side-pointers {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
+
 .homepage-container {
   display: flex;
   width: 100%;
@@ -29,6 +32,7 @@
       margin-top: 78px;
     }
   }
+
   .mainTitle {
     font-size: 90px;
     line-height: 90px;
@@ -36,6 +40,7 @@
     color: helpers.$blackColor;
 
   }
+
   >div {
     width: 100%;
     color: helpers.$blackColor;
@@ -57,7 +62,7 @@
       display: flex;
     }
 
-   
+
 
     .tiktok {
       font-size: 110px;
@@ -193,7 +198,7 @@
       display: flex;
       align-items: center;
 
-   
+
 
       .stick {
         width: 130px;
@@ -336,114 +341,136 @@
     }
   }
 }
-.why-social-media{
+
+.why-social-media {
   padding: 80px 10%;
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  >h4{
+
+  >h4 {
     font-size: 57px;
     color: #37343A;
     display: flex;
     align-items: center;
     justify-content: center;
-    h1{
+
+    h1 {
       font-size: 100px;
       font-weight: 900;
       color: helpers.$pinkColor;
       margin-left: 10px
     }
   }
-  p{
+
+  p {
     text-align: center;
   }
-  img{
+
+  img {
     width: 68%;
   }
 }
-.home-page-banner{
+
+.home-page-banner {
   background-color: #DDE468;
-  padding:10px 10%;
+  padding: 10px 10%;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  >div{
+
+  >div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1{
+
+    h1 {
       font-size: 110px;
       line-height: 110px;
       color: #FFFBFB;
     }
-    h3{
+
+    h3 {
       font-size: 50px;
       line-height: 50px;
       color: #37343A;
     }
   }
 }
-.home-page-brands{
+
+.home-page-brands {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px 0;
-  .brands-title{
+
+  .brands-title {
     display: flex;
     align-items: baseline;
     color: #37343A;
-    h1{
+
+    h1 {
       font-size: 90px;
       font-weight: 900;
     }
-    h3{
+
+    h3 {
       font-size: 50px;
       font-weight: 400;
     }
   }
 }
-.home-page-results{
-  padding:10px 10%;
+
+.home-page-results {
+  padding: 10px 10%;
   height: 578px;
   background-color: helpers.$pinkColor;
   margin-bottom: 200px;
-  .home-page-results-title{
+
+  .home-page-results-title {
     display: flex;
     align-items: baseline;
-    img{
-     width: 5vw;
-     height: 5vw;
+
+    img {
+      width: 5vw;
+      height: 5vw;
     }
-    h1{
+
+    h1 {
       font-size: 90px;
       font-weight: 800;
       line-height: 90px;
       color: #FFFBFB;
       margin-right: 20px;
     }
-    h3{
+
+    h3 {
       font-size: 57px;
       line-height: 57px;
       color: #DDE468;
     }
   }
-  .video-container{
+
+  .video-container {
     display: flex;
     justify-content: space-between;
-    >video{
+
+    >video {
       width: 22%;
     }
   }
 }
+
 @media (max-width: 1750px) {
   .homepage-container {
     .mainTitle {
       font-size: 70px;
       line-height: 70px;
     }
+
     >div {
       .tiktok {
         font-size: 80px;
@@ -515,17 +542,21 @@
     text-align: center;
     font-size: 18px;
   }
-  .why-social-media > h4 h1 {
+
+  .why-social-media>h4 h1 {
     font-size: 80px;
   }
-  .home-page-banner > div h1 {
+
+  .home-page-banner>div h1 {
     font-size: 80px;
     line-height: 80px;
   }
-  .home-page-banner > div h3 {
+
+  .home-page-banner>div h3 {
     font-size: 47px;
     line-height: 47px;
   }
+
   .home-page-results .home-page-results-title h1 {
     font-size: 70px;
   }
@@ -537,6 +568,7 @@
       font-size: 50px;
       line-height: 50px;
     }
+
     >div {
       .tiktok {
         font-size: 60px;
@@ -618,23 +650,29 @@
     text-align: center;
     font-size: 16px;
   }
-  .why-social-media > h4 h1 {
+
+  .why-social-media>h4 h1 {
     font-size: 60px;
   }
-  .why-social-media > h4 {
+
+  .why-social-media>h4 {
     font-size: 37px;
   }
-  .home-page-banner > div h1 {
+
+  .home-page-banner>div h1 {
     font-size: 60px;
     line-height: 60px;
   }
-  .home-page-banner > div h3 {
+
+  .home-page-banner>div h3 {
     font-size: 37px;
     line-height: 37px;
   }
+
   .home-page-results .home-page-results-title h1 {
     font-size: 50px;
   }
+
   .home-page-results .home-page-results-title h3 {
     font-size: 37px;
   }
@@ -645,91 +683,151 @@
     font-size: 17px;
   }
 }
+
 @media (max-width: 1000px) {
-  .homepage-container {
-    .ima-mqsto{
-      flex-direction: row;
-      h6{
-        font-size: 27px;
-    margin-right: 10px
+  .home-services {
+    padding: 25px 10%;
+
+    &-title {
+      justify-content: center;
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 50px;
       }
-        }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
 
   }
+
+  .homepage-container {
+    .ima-mqsto {
+      flex-direction: row;
+
+      h6 {
+        font-size: 27px;
+        margin-right: 10px
+      }
+    }
+
+  }
+
   .homepage-container img {
     width: 100%;
-}
-.homepage-container .mainTitle {
-  font-size: 45px;
-  line-height: 50px;
-}
-.homepage-container > div .tiktok {
-  font-size: 50px;
-  line-height: 60px;
-}
-.homepage-container .what-we-do .butn-dark {
-  align-self: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.home-page-more-container {
-  padding: 0 5%;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.home-page-more {
-  font-size: 14px;
-  text-align: center;
-}
-.why-tiktok h1 {
-  font-size: 40px;
-  color: #FFFBFB;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.why-tiktok .why-tiktok-inner-container {
-  flex-direction: column;
-  align-items: center;
-}
-.why-tiktok .why-tiktok-inner-container img {
-  width: 60%;
-}
-.why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side {
-  align-items: center;
-}
-.why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side p {
-  text-align: center;
-}
-.short-form-container .short-form-relative .poiners .stick {
-  width: 2vw;
- 
-}
-.short-form-container h1 {
-  font-size: 50px;
+  }
+
+  .homepage-container .mainTitle {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .homepage-container>div .tiktok {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .homepage-container .what-we-do .butn-dark {
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .home-page-more-container {
+    padding: 0 5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-page-more {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .why-tiktok h1 {
+    font-size: 40px;
+    color: #FFFBFB;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  .why-tiktok .why-tiktok-inner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-tiktok .why-tiktok-inner-container img {
+    width: 60%;
+  }
+
+  .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side {
+    align-items: center;
+  }
+
+  .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side p {
+    text-align: center;
+  }
+
+  .short-form-container .short-form-relative .poiners .stick {
+    width: 2vw;
+
+  }
+
+  .short-form-container h1 {
+    font-size: 50px;
+  }
+
+  .home-services-main-container {
+    flex-wrap: wrap;
+    gap: 2vw;
+
+    >div {
+      width: 40%;
+    }
+
+    .reverse-col {
+      flex-direction: column-reverse;
+    }
+  }
+  .why-social-media > h4 {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    h1{
+      font-size: 50px;
+    }
 }
 
 }
+
 @media (max-width: 480px) {
   .homepage-container .mainTitle {
     font-size: 30px;
     line-height: 30px;
-}
-  .homepage-container > div .tiktok {
+  }
+
+  .homepage-container>div .tiktok {
     font-size: 40px;
     line-height: 40px;
-  }  
+  }
+
   .homepage-container .ima-mqsto h6 {
     font-size: 20px;
     margin-right: 10px;
+  }
+
+  .why-tiktok h1 {
+    font-size: 40px;
+    color: #FFFBFB;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
 }
-.why-tiktok h1 {
-  font-size: 40px;
-  color: #FFFBFB;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-}
+
 @media (max-width: 430px) {
   .why-tiktok h1 {
     font-size: 30px;
@@ -737,18 +835,21 @@
     text-transform: uppercase;
     font-weight: 900;
   }
+
   .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side h3 {
     font-size: 30px;
   }
 
 }
+
 @media (max-width: 750px) {
   .short-form-container .short-form-relative .short-form-video {
     width: 50%;
-    }
+  }
+
   .short-form-container .short-form-relative .poiners {
     .ring {
-    
+
       background: helpers.$pinkColor;
       color: #FFFBFB;
       width: 18px;
@@ -764,9 +865,10 @@
       font-size: 10px;
       color: #37343A;
       max-width: 77%;
-      
+
     }
   }
+
   .short-form-container h1 {
     font-size: 25px;
     text-align: center;
@@ -775,21 +877,106 @@
   .short-form-container {
     padding: 0 5%;
   }
+
   .left-side-pointers {
     gap: 5vw;
-    h5{
+
+    h5 {
       font-size: 9px;
       text-align: end;
     }
   }
+
   .right-side-pointers {
     gap: 8vw;
-    h5{
+
+    h5 {
       font-size: 9px;
-      
+
     }
   }
-  .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side p {
-   font-size: 10px;
+
+  .home-services {
+    padding: 25px 10%;
+
+    &-title {
+      justify-content: center;
+
+      h1 {
+        font-size: 25px;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+  }
+  .home-services-main-container > div {
+    .big-pink  {
+      width: 25vw;
+      height: 25vw;
+    }
+    .big-yellow{
+      width: 25vw;
+      height: 25vw;
+    }
+    p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    h6 {
+      font-size: 14px;
+  }
+  .spacer {
+    width: 5px;
+  }
+  .spacer-yellow {
+    width: 5px;
+  }
+  }
+  .why-social-media > h4 {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    h1{
+      font-size: 25px;
+    }
+}
+.why-social-media {
+  padding: 80px 0;
+  p {
+    font-size: 12px;
+    padding: 0 10%;
+  }
+  img{
+    width: 100%;
+  }
+}
+.home-page-banner > div h1 {
+  font-size: 25px;
+  line-height: 25px;
+}
+.home-page-banner > div h3 {
+  font-size: 16px;
+  line-height: 18px;
+}
+.home-page-brands .brands-title {
+  h1 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.home-page-results .home-page-results-title{
+  h1 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }
 }
