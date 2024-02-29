@@ -1,5 +1,14 @@
 @use '../../asstes/css/variables.scss' as helpers;
-
+.right-side-pointers{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.left-side-pointers{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 .homepage-container {
   display: flex;
   width: 100%;
@@ -181,42 +190,10 @@
     }
 
     .poiners {
-      position: absolute;
       display: flex;
       align-items: center;
 
-      &-one {
-        top: 10%;
-        transform: translate(-1%, 10px);
-        left: 62%;
-      }
-
-      &-two {
-        top: 20%;
-        transform: translate(-474px, 10px);
-      }
-
-      &-three {
-        top: 30%;
-        transform: translate(-1%, 10px);
-        left: 62%;
-      }
-
-      &-four {
-        top: 40%;
-        transform: translate(-540px, 10px);
-      }
-
-      &-five {
-        top: 50%;
-        transform: translate(-1%, 10px);
-        left: 62%;
-      }
-
-      &-six {
-        top: 60%;
-        transform: translate(-277px, 10px);
-      }
+   
 
       .stick {
         width: 130px;
@@ -667,21 +644,6 @@
   .short-form-container .short-form-relative .poiners h5 {
     font-size: 17px;
   }
-
-  .short-form-container .short-form-relative .poiners-two {
-    top: 20%;
-    transform: translate(-100%, 10px);
-  }
-
-  .short-form-container .short-form-relative .poiners-four {
-    top: 40%;
-    transform: translate(-100%, 10px);
-  }
-
-  .short-form-container .short-form-relative .poiners-six {
-    top: 60%;
-    transform: translate(-100%, 10px);
-  }
 }
 @media (max-width: 1000px) {
   .homepage-container {
@@ -775,61 +737,53 @@
     text-transform: uppercase;
     font-weight: 900;
   }
+
 }
 @media (max-width: 750px) {
   .short-form-container .short-form-relative .short-form-video {
-    width: 54%;
-  }
+    width: 36%;
+    }
   .short-form-container .short-form-relative .poiners {
-    position: absolute;
-    display: flex;
-    align-items: center;
-
-    &-one {
-      top: 10%;
-      transform: translate(0%, 10px);
-      left: 76%;
-    }
-
-   
-
-    &-three {
-      top: 30%;
-      transform: translate(0%, 10px);
-      left: 76%;
-    }
-
-    
-
-    &-five {
-      top: 50%;
-      transform: translate(0%, 10px);
-      left: 76%;
-    }
-
-  
     .ring {
-      width: 40px;
-      height: 40px;
+    
       background: helpers.$pinkColor;
+      color: #FFFBFB;
+      width: 18px;
+      height: 18px;
       border-radius: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #FFFBFB;
+      font-size: 9px;
     }
 
     h5 {
       font-size: 10px;
       color: #37343A;
-      max-width: 16vw
+      max-width: 82%;
+      
     }
   }
   .short-form-container h1 {
     font-size: 25px;
     text-align: center;
   }
-  .short-form-container .short-form-relative {
-    transform: scale(0.7);
+
+  .short-form-container {
+    padding: 0 5%;
+  }
+  .left-side-pointers {
+    gap: 5vw;
+    h5{
+      font-size: 9px;
+      text-align: end;
+    }
+  }
+  .right-side-pointers {
+    gap: 8vw;
+    h5{
+      font-size: 9px;
+      
+    }
   }
 }

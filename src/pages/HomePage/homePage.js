@@ -78,7 +78,6 @@ const HomePage = () => {
           </div>
         </div>
         <img src={bahur}></img>
-
         {isMobile && (
           <>
             {" "}
@@ -89,7 +88,7 @@ const HomePage = () => {
             <h4 className="mainTitle">БИЗНЕСЪТ ТИ</h4>
             <p>full service TikTok агенция</p>
           </>
-        )}
+        )}    
       </div>
       <div className="home-page-more-container">
         <p className="home-page-more">
@@ -148,34 +147,42 @@ const HomePage = () => {
             <h1>SHORT FORM ВИДЕО</h1>
             <h3>КАКВО СЕДИ ЗАД КРАЙНИЯ РЕЗУЛТАТ</h3>
             <div className="short-form-relative">
-              <div className="short-form-video">
-                <img className="short-form-img" src={shortForm} />
-                <div className="poiners poiners-one">
-                  <div className="stick"></div>
-                  <div className="ring">1</div>
-                  <h5>КРЕАТИВНА СТРАТЕГИЯ</h5>
-                </div>
+              <div  className="left-side-pointers">
+            
                 <div className="poiners poiners-two">
                   <h5>ИДЕИ И СКРИПТИРАНЕ</h5>
                   <div className="ring">2</div> <div className="stick"></div>
                 </div>
+                
+                <div className="poiners poiners-four">
+                  <h5>ОБРАБОТКА И COPYWRITING</h5>
+                  <div className="ring">4</div> <div className="stick"></div>
+                </div>
+                <div className="poiners poiners-six">
+                  <h5>АНАЛИЗ</h5>
+                  <div className="ring">6</div> <div className="stick"></div>
+                </div>
+              </div>
+              <div className="short-form-video">
+                <img className="short-form-img" src={shortForm} />
+              </div>
+              <div className="right-side-pointers">
+              <div className="poiners poiners-one">
+                  <div className="stick"></div>
+                  <div className="ring">1</div>
+                  <h5>КРЕАТИВНА СТРАТЕГИЯ</h5>
+                </div>
+             
                 <div className="poiners poiners-three">
                   <div className="stick"></div>
                   <div className="ring">3</div>
                   <h5>СНИМАЧЕН ДЕН</h5>
                 </div>
-                <div className="poiners poiners-four">
-                  <h5>ОБРАБОТКА И COPYWRITING</h5>
-                  <div className="ring">4</div> <div className="stick"></div>
-                </div>
+                
                 <div className="poiners poiners-five">
                   <div className="stick"></div>
                   <div className="ring">5</div>
                   <h5>УПРАВЛЕНИЕ НА ПРОФИЛА</h5>
-                </div>
-                <div className="poiners poiners-six">
-                  <h5>АНАЛИЗ</h5>
-                  <div className="ring">6</div> <div className="stick"></div>
                 </div>
               </div>
             </div>
