@@ -737,6 +737,9 @@
     text-transform: uppercase;
     font-weight: 900;
   }
+  .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side h3 {
+    font-size: 30px;
+  }
 
 }
 @media (max-width: 750px) {
@@ -786,4 +789,7 @@
       
     }
   }
+  .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side p {
+   font-size: 10px;
+}
 }
