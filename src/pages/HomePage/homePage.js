@@ -299,16 +299,16 @@ const HomePage = () => {
               <h3>РЕЗУЛТАТИ</h3>
             </div>
             <div className="video-container">
-              <video className="home-page-results-video" autoPlay loop muted>
+              <video className="home-page-results-video"playsinline  autoplay="autoplay"  loop muted>
                 <source src={video} type="video/mp4" />
               </video>
-              <video className="home-page-results-video" autoPlay loop muted>
+              <video className="home-page-results-video" playsinline  autoplay="autoplay" loop muted>
                 <source src={video2} type="video/mp4" />
               </video>
-              <video className="home-page-results-video" autoPlay loop muted>
+              <video className="home-page-results-video" playsinline autoplay="autoplay" loop muted>
                 <source src={video3} type="video/mp4" />
               </video>
-              <video className="home-page-results-video" autoPlay loop muted>
+              <video className="home-page-results-video"playsinline  autoplay="autoplay" loop muted>
                 <source src={video4} type="video/mp4" />
               </video>
             </div>

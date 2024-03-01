@@ -426,9 +426,7 @@
 
 .home-page-results {
   padding: 10px 10%;
-  height: 578px;
   background-color: helpers.$pinkColor;
-  margin-bottom: 200px;
 
   .home-page-results-title {
     display: flex;
@@ -805,6 +803,7 @@
 }
 
 @media (max-width: 480px) {
+
   .homepage-container .mainTitle {
     font-size: 30px;
     line-height: 30px;
@@ -843,6 +842,18 @@
 }
 
 @media (max-width: 750px) {
+  .home-page-results {
+    .video-container {
+      flex-wrap: wrap;
+      gap: 4vw;
+      > video {
+        width: 38vw;
+    }
+  }
+  .home-page-results-title {
+  justify-content: center;
+  }
+}
   .short-form-container .short-form-relative .short-form-video {
     width: 50%;
   }
@@ -928,6 +939,7 @@
     }
     h6 {
       font-size: 14px;
+      text-align: center;
   }
   .spacer {
     width: 5px;
