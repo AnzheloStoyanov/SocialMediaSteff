@@ -18,6 +18,9 @@ import video from "../../asstes/images/ssstik.io_1705837693230.mp4";
 import video2 from "../../asstes/images/video2.mp4";
 import video3 from "../../asstes/images/video3.mp4";
 import video4 from "../../asstes/images/video4.mp4";
+import shortFormVideo from "../../asstes/images/shortFormVideo.mp4"
+import whyTikTokVideo from "../../asstes/images/whyTikTok.mp4"
+import mainVideo from "../../asstes/images/mainVideo.mp4"
 const HomePage = () => {
   const inputRef = useRef();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
@@ -77,7 +80,9 @@ const HomePage = () => {
             <DynamicButton text="Работи с нас" />
           </div>
         </div>
-        <img src={bahur}></img>
+        <video playsInline  autoplay="autoplay"  loop muted>
+                <source src={mainVideo} type="video/mp4" />
+        </video>
         {isMobile && (
           <>
             {" "}
@@ -105,7 +110,9 @@ const HomePage = () => {
           Защо <strong> TikTok?</strong>
         </h1>
         <div className="why-tiktok-inner-container">
-          <img src={whytiktok}></img>
+        <video playsInline  autoplay="autoplay"  loop muted>
+                <source src={whyTikTokVideo} type="video/mp4" />
+        </video>
           <div className="why-tiktok-righ-side">
             <h3>
               {" "}
@@ -163,8 +170,10 @@ const HomePage = () => {
                   <div className="ring">6</div> <div className="stick"></div>
                 </div>
               </div>
-              <div className="short-form-video">
-                <img className="short-form-img" src={shortForm} />
+              <div className="short-form-video">        
+                <video playsInline  autoplay="autoplay"  loop muted>
+                <source src={shortFormVideo} type="video/mp4" />
+              </video>
               </div>
               <div className="right-side-pointers">
               <div className="poiners poiners-one">
