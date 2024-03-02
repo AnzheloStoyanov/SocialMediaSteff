@@ -21,6 +21,9 @@ import video4 from "../../asstes/images/video4.mp4";
 import shortFormVideo from "../../asstes/images/shortFormVideo.mp4"
 import whyTikTokVideo from "../../asstes/images/whyTikTok.mp4"
 import mainVideo from "../../asstes/images/mainVideo.mp4"
+import TypewriterComponent from "typewriter-effect";
+
+
 const HomePage = () => {
   const inputRef = useRef();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
@@ -45,17 +48,27 @@ const HomePage = () => {
   ];
 
   return (
-    <>
-      <div className="homepage-container">
+
+    <section className="home-page-section">
+    <div className="homepage-container">
         <div>
           <img className="heart" src={heart}></img>
           {!isMobile && (
             <>
               <p>full service TikTok агенция</p>
+              <div className="typewriter-style">
+           
+          </div>
               <h4 className="mainTitle">БИЗНЕСЪТ ТИ</h4>
               <div>
                 <h6>има място в</h6>
-                <h4 className="tiktok">tiktok</h4>
+                <h4 className="tiktok"> <TypewriterComponent
+              options={{
+                strings: ['tiktok'],
+                autoStart: true,
+                loop: true,
+              }}
+            /></h4>
               </div>
             </>
           )}
@@ -88,7 +101,13 @@ const HomePage = () => {
             {" "}
             <div className="ima-mqsto">
               <h6>има място в</h6>
-              <h4 className="tiktok">tiktok</h4>
+              <h4 className="tiktok"> <TypewriterComponent
+              options={{
+                strings: ['tiktok'],
+                autoStart: true,
+                loop: true,
+              }}
+            /></h4>
             </div>
             <h4 className="mainTitle">БИЗНЕСЪТ ТИ</h4>
             <p>full service TikTok агенция</p>
@@ -323,8 +342,9 @@ const HomePage = () => {
             </div>
           </div>
           </>
-    
-    </>
+
+    </section>
+
   );
 };
 
