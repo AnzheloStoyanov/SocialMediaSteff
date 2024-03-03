@@ -22,9 +22,14 @@ import shortFormVideo from "../../asstes/images/shortFormVideo.mp4"
 import whyTikTokVideo from "../../asstes/images/whyTikTok.mp4"
 import mainVideo from "../../asstes/images/mainVideo.mp4"
 import TypewriterComponent from "typewriter-effect";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const HomePage = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const inputRef = useRef();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
 
@@ -173,18 +178,24 @@ const HomePage = () => {
             <h1>SHORT FORM ВИДЕО</h1>
             <h3>КАКВО СЕДИ ЗАД КРАЙНИЯ РЕЗУЛТАТ</h3>
             <div className="short-form-relative">
-              <div  className="left-side-pointers">
+              <div className="left-side-pointers">
             
-                <div className="poiners poiners-two">
+                <div  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="poiners poiners-two">
                   <h5>ИДЕИ И СКРИПТИРАНЕ</h5>
                   <div className="ring">2</div> <div className="stick"></div>
                 </div>
                 
-                <div className="poiners poiners-four">
+                <div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="poiners poiners-four">
                   <h5>ОБРАБОТКА И COPYWRITING</h5>
                   <div className="ring">4</div> <div className="stick"></div>
                 </div>
-                <div className="poiners poiners-six">
+                <div  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="poiners poiners-six">
                   <h5>АНАЛИЗ</h5>
                   <div className="ring">6</div> <div className="stick"></div>
                 </div>
@@ -195,19 +206,25 @@ const HomePage = () => {
               </video>
               </div>
               <div className="right-side-pointers">
-              <div className="poiners poiners-one">
+              <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="poiners poiners-one">
                   <div className="stick"></div>
                   <div className="ring">1</div>
                   <h5>КРЕАТИВНА СТРАТЕГИЯ</h5>
                 </div>
              
-                <div className="poiners poiners-three">
+                <div  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="poiners poiners-three">
                   <div className="stick"></div>
                   <div className="ring">3</div>
                   <h5>СНИМАЧЕН ДЕН</h5>
                 </div>
                 
-                <div className="poiners poiners-five">
+                <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="poiners poiners-five">
                   <div className="stick"></div>
                   <div className="ring">5</div>
                   <h5>УПРАВЛЕНИЕ НА ПРОФИЛА</h5>
