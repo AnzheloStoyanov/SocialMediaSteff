@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.scss";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import logo from "../../asstes/images/Logo.png"
 
 const Footer = () => {
   return (
@@ -10,7 +12,7 @@ const Footer = () => {
         <div class="row">
           <div class="col">
             <div class="footer-column footer-about">
-              <h3 class="footer-title">Крайморие парк</h3>
+              <img className="logo-gooter" src={logo}></img>
               <p class="footer-about-text">
                 Заобиколен от китна растителност и в комбинация с първа линия
                 море, Крайморие парк предоставя спокойствие и уют на своите
@@ -20,10 +22,10 @@ const Footer = () => {
           </div>
           <div class="col-middle">
             <div class="footer-column footer-explore">
-              <h3 class="footer-title">Навигация</h3>
+              <h3 class="footer-title">БЪРЗИ ВРЪЗКИ</h3>
               <ul class="footer-explore-list">
                 <li>
-                  <a href="about.html">Крайморие парк</a>
+                  <a href='#aboutus'>За нас</a>
                 </li>
                 <li>
                   <a href="rooms.html">Настаняване</a>
@@ -36,9 +38,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="contacts.html">Контакти</a>
-                </li>
-                <li>
-                  <a href="index-en.html">English</a>
                 </li>
               </ul>
             </div>

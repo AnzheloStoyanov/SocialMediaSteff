@@ -1,17 +1,18 @@
 import DynamicButton from "../DynamicButton/DynamicButton";
 import "./navBar.scss";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const NavBar = ({ children, onClose }) => {
   return (
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <Link to="/aboutus">
+        <Link to="#aboutus">
            За нас
         </Link>
       </li>
       <li class="nav-item">
-        <Link to="/services">
+        <Link to="#services">
             Услуги
         </Link>
       </li>

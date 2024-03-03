@@ -1,14 +1,16 @@
 @use '../../asstes/css/variables.scss' as helpers;
 
 footer {
-
+    .logo-gooter{
+        width: 10vw;
+    }
     box-sizing: border-box;
 
 
 
     .main-footer-container {
         display: flex;
-        background-color: helpers.$secondaryColor;
+        background-color: helpers.$yellowColor;
         padding-top: 20px;
         padding: 20px  helpers.$globalPadding;
         .row{
@@ -59,7 +61,7 @@ footer {
             &-text {
                 font-size: 15px;
                 margin: 0;
-                color: #adadad;
+                color: helpers.$blackColor;
                 padding-bottom: 20px;
             }
 
@@ -99,7 +101,7 @@ footer {
                         position: relative;
                         display: block;
                         font-size: 15px;
-                        color: #adadad;
+                        color: helpers.$blackColor;
                         -webkit-transition: all 500ms ease;
                         transition: all 500ms ease;
 
@@ -116,7 +118,7 @@ footer {
                             width: 6px;
                             height: 6px;
                             content: "";
-                            background-color: helpers.$mainColor;
+                            background-color: helpers.$pinkColor;
                             -webkit-transform: translateY(-50%);
                             transform: translateY(-50%);
                             opacity: 0;
@@ -138,7 +140,7 @@ footer {
 
         .footer-title {
             font-size: 24px;
-            color: helpers.$white-color;
+            color: helpers.$blackColor;
             margin-bottom: 20px;
         }
 
@@ -153,7 +155,7 @@ footer {
     }
 
     .bottom-line-footer {
-        background-color: helpers.$secondaryColor2;
+        background-color: helpers.$yellowColor;
         padding:20px  helpers.$globalPadding;
         display: flex;
         justify-content: center;
