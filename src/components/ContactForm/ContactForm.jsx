@@ -11,6 +11,8 @@ const ContactForm = () => {
     email: "",
     socialMediaHelp: "",
   });
+  const [submissionSuccess, setSubmissionSuccess] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,10 +26,21 @@ const ContactForm = () => {
     e.preventDefault();
 
     // Use Axios to send a POST request
-    axios.post('http://localhost:8080/submit-form', formData)
+    axios.post('https://soacial-media-api.vercel.app/submit-form', formData)
       .then(response => {
-        console.log(response.data);
-        alert("Form submitted! We will contact you soon.");
+        setSubmissionSuccess(true)
+          // Hide the success message after 5 seconds
+          setTimeout(() => {
+            setSubmissionSuccess(false); // Hide the success message
+            // Reset form fields here
+            setFormData({
+              brandName: "",
+              brandDescription: "",
+              website: "",
+              email: "",
+              socialMediaHelp: "",
+            });
+          }, 5000);
       })
       .catch(error => {
         console.error('Error:', error);
@@ -60,11 +73,17 @@ const ContactForm = () => {
       <div>
         
       </div>
+      {submissionSuccess && (
+      <div className="success-message">
+          Вашето съобщение беше изпратено успешно. Скоро ще се свържем с вас.
+      </div>
+    )}
       <div className="form-button">
       <button>РАБОТИ С НАС</button>
       </div>
      
     </form>
+    
   );
 };
 

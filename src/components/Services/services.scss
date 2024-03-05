@@ -144,4 +144,28 @@
 			  flex-direction: column-reverse;
 			}
 		  }
+		  .home-services-main-container > div {
+			.big-pink  {
+			  width: 25vw;
+			  height: 25vw;
+			}
+			.big-yellow{
+			  width: 25vw;
+			  height: 25vw;
+			}
+			p {
+			  font-size: 16px;
+			  line-height: 16px;
+			}
+			h6 {
+			  font-size: 14px;
+			  text-align: center;
+		  }
+		  .spacer {
+			width: 5px;
+		  }
+		  .spacer-yellow {
+			width: 5px;
+		  }
+		  }
 	}

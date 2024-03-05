@@ -793,7 +793,10 @@
 }
 
 @media (max-width: 750px) {
-
+  .home-page-results .home-page-results-title img {
+    width: 7vw;
+    height: 7vw;
+  }
   .home-page-contant-form{
     >h1{
       font-size: 25px;
@@ -956,12 +959,16 @@
     font-weight: 400;
   }
 }
+.home-page-brands .brands-title {
+  padding: 0 10%;
+}
 .home-page-results .home-page-results-title{
   h1 {
     font-size: 25px;
+    margin-right: 5px
   }
   h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 }
