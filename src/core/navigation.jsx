@@ -1,13 +1,12 @@
 import HomePage from "../pages/HomePage/homePage";
 import NotFound from "../pages/NotFound/notFound";
 import Accommodation from "../pages/Accommodation/accommodation";
-import Kraimorie from "../pages/Kraimorie/kraimorie";
 import Prices from "../pages/Prices/Prices";
 import Gallery from "../pages/Gallery/Gallery";
 import Entertainment from "../pages/Entertainment/entertainment";
 import Contact from "../pages/Contact/Contact";
 import RoomPage from "../pages/Room/RoomPage";
-
+import Services from "../pages/Services/Services";
 export const nav = [
   {
     path: "/",
@@ -15,9 +14,9 @@ export const nav = [
     element:<HomePage/>,
   },
   {
-    path: "/kraimorie",
+    path: "/services",
     name: "kraimorie",
-    element: <Kraimorie/> ,
+    element: <Services/>
   },
   {
     path: "/accommodation",

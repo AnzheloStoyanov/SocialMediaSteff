@@ -1,13 +1,31 @@
 @use '../../asstes/css/variables.scss' as helpers;
 @import '../../asstes/css/mixins';
 
-// .form {
-//     -webkit-box-flex: 0;
-//     -ms-flex: 0 0 41.666667%;
-//     flex: 0 0 41.666667%;
-//     max-width: 41.666667%;
-// }
+.contact-form {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.form-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button{
+        background: helpers.$pinkColor;
+        color: helpers.$whiteColor;
+        border: none;
+        border-radius: 18px;
+        padding: 10px 30px;
+        font-size: 30px;
+        cursor: pointer;
+        &:hover{
+            background:#f94480b5 ;
+        }
+    }
+}
 .form {
+    
 
     font-size: helpers.$font-size-xxl ;
     color: helpers.$secondaryColor;
@@ -38,15 +56,15 @@ input[type="password"],
 input[type="email"],
 input[type="text"],
 input[type="file"],
+input[type="url"],
 textarea {
     max-width: 100%;
     margin-bottom: 15px;
-    padding: 10px 0;
+    padding: 10px;
     height: auto;
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-width: 0 0 1px;
     border-style: solid;
     display: block;
     width: 100%;
@@ -54,29 +72,30 @@ textarea {
     font-family: 'Jost', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: #666;
+    color: helpers.$blackColor;
     background-image: none;
-    border-bottom: 1px solid #ececec;
+    border: 1px solid helpers.$blackColor;
     border-color: ease-in-out .15s, box-shadow ease-in-out .15s;
+    border-radius: 30px;
 
     &::selection {
         color: #fff;
-        background: #80CC82;
+        background: helpers.$pinkColor;
     }
 
 }
 
 input:focus,
 textarea:focus-visible {
-    border-bottom-width: 1px;
-    border-color: #80CC82;
+    border-width: 2px;
+    border-color: helpers.$pinkColor;
     outline: none;
 }
 
 input:focus,
 textarea:focus {
-    border-bottom-width: 1px;
-    border-color: #80CC82;
+    border-width: 2px;
+    border-color: helpers.$pinkColor;
 }
 
 @media (max-width: 1000px) {
@@ -84,4 +103,20 @@ textarea:focus {
     max-width: 100%;
     padding: 0;
 }
+}
+@media (max-width: 750px) {
+    .form-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button{
+           
+            font-size: 24px;
+            cursor: pointer;
+
+            &:active{
+                background:#f94480b5 ;
+            }
+        }
+    }
 }

@@ -22,6 +22,8 @@ import TypewriterComponent from "typewriter-effect";
 import AOS from "aos";
 import circle from "../../asstes/images/circle.svg"
 import "aos/dist/aos.css";
+import ServicesContainer from "../../components/Services/ServicesContainer";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 const HomePage = () => {
   useEffect(() => {
@@ -238,61 +240,7 @@ const HomePage = () => {
               УСЛУГИ
             </h1>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" className="home-services-main-container">
-            <div>
-              <h6>Strategy & Conception</h6>
-              <p>
-                Всяка стратегия е изцяло персонализирана за нуждите и целите на
-                твоя бранд въз основа на доказано работещи практики в
-                платформата TikTok.
-              </p>
-              <div className="spacer"></div>
-              <div className="big-pink">
-                <div className="small-pink">
-                  <img className="lamp" src={lamp}></img>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="big-yellow">
-                <div className="small-yellow">
-                  <img className="lamp" src={camera}></img>
-                </div>
-              </div>
-              <div className="spacer-yellow"></div>
-              <h6>Content Creation</h6>
-              <p>
-                Съдържанието, което създаваме за всеки бранд е винаги съобразено
-                с таргет аудиторията, а не с "какво ще се хареса на масата".
-              </p>
-            </div>
-            <div className="reverse-col">
-              <h6>Creator Marketing</h6>
-              <p>
-                Ние сме връзката между бранда ти и новото поколение крийтъри,
-                които аудиторията харесва и следи.
-              </p>
-              <div className="spacer"></div>
-              <div className="big-pink">
-                <div className="small-pink">
-                  <img className="lamp" src={girl}></img>
-                </div>
-              </div>
-            </div>
-            <div className="reverse-col">
-              <div className="big-yellow">
-                <div className="small-yellow">
-                  <img className="lamp" src={voice}></img>
-                </div>
-              </div>
-              <div className="spacer-yellow"></div>
-              <h6>Content Creation</h6>
-              <p>
-                Съдържанието, което създаваме за всеки бранд е винаги съобразено
-                с таргет аудиторията, а не с "какво ще се хареса на масата".
-              </p>
-            </div>
-          </div>
+          <ServicesContainer/>
         </div>
         <div id="aboutus" className="why-social-media">
           <h4 data-aos="fade-up" data-aos-duration="1000">
@@ -386,6 +334,11 @@ const HomePage = () => {
               <source src={video4} type="video/mp4" />
             </video>
           </div>
+        </div>
+        <div className="home-page-contant-form">
+          <h1>РАБОТИ С НАС</h1>
+          <p>Попълни долните полета с нужната информация, която да ни запознаем с бранда ти предварително. След като получим запитването, ние ще се свържем с теб, за да организираме опознавателна среща, в която да разберем как можем да сме ти от полза.</p>
+        <ContactForm></ContactForm>
         </div>
       </>
     </section>

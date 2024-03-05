@@ -1,138 +1,70 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./ContactForm.scss";
-import DynamicButton from "../DynamicButton/DynamicButton";
+import axios from 'axios'; // Import Axios
 import { useParams } from "react-router-dom";
 
-const ContactForm = ({ className }) => {
-  const [submissionStatus, setSubmissionStatus] = useState(null);
-  const { id } = useParams();
-
+const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    indate: '',
-    outdate: '',
-    message: ''
+    brandName: "",
+    brandDescription: "",
+    website: "",
+    email: "",
+    socialMediaHelp: "",
   });
-  
-  const handleInputChange = (e) => {
+
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form data submitted:', formData);
-    setSubmissionStatus('success');
+
+    // Use Axios to send a POST request
+    axios.post('http://localhost:8080/submit-form', formData)
+      .then(response => {
+        console.log(response.data);
+        alert("Form submitted! We will contact you soon.");
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert("An error occurred. Please try again.");
+      });
   };
 
   return (
-<div className={`form ${className}`} >   
-<button onClick={()=>{alert(id)}}>Prss</button>
-
-  <h3>Пишете ни</h3>
-      <form method="post" class="contact__form">
-        <div className="row">
-          <div class="col-12">
-          {submissionStatus === 'success' && (
-              <div className="alert alert-success contact__msg" role="alert">
-                Съобщението Ви беше изпратено успешно!
-              </div>
-            )}
-          </div>
-        </div>
-        <div class="row">
-          <div class=" form-group">
-          <input
-              name="name"
-              type="text"
-              placeholder="Вашето име *"
-              required=""
-              value={formData.name}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div class=" form-group">
-          <input
-              name="email"
-              type="email"
-              placeholder="Email *"
-              required=""
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div class=" form-group">
-          <input
-              name="phone"
-              type="text"
-              placeholder="Телефон *"
-              required=""
-              value={formData.phone}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div class=" form-group">
-          <input
-              name="subject"
-              type="text"
-              placeholder="Относно *"
-              required=""
-              value={formData.subject}
-              onChange={handleInputChange}
-            />
-          </div>
-          {/* <Calendar></Calendar> */}
-          <div class="from-bottom-section">
-            <div class="input1_wrapper">
-              <label>Пристигане</label>
-              <div class="input1_inner">
-                <input
-                  type="text"
-                  name="indate"
-                  class="form-control input datepicker hasDatepicker"
-                  placeholder="Дата на пристигане"
-                  id="dp1705831260408"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="from-bottom-section">
-            <div class="input1_wrapper">
-              <label>Заминаване</label>
-              <div class="input1_inner">
-                <input
-                  type="text"
-                  name="outdate"
-                  class="form-control input datepicker hasDatepicker"
-                  placeholder="Дата на заминаване"
-                  id="dp1705831260409"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="from-bottom-section form-group">
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="4"
-              placeholder="Уточнения + брой възрастни/деца *"
-              required=""
-            ></textarea>
-          </div>
-          <div class="from-bottom-section">
-            <DynamicButton onClick={handleSubmit} text='Изпратете'></DynamicButton>
-            {/* <button class="butn-dark"  type="submit">
-            Изпратете
-            </button> */}
-          </div>
-        </div>
-      </form>
-    </div>
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label htmlFor="brandName">Име на бранда:</label>
+        <input type="text" id="brandName" name="brandName" required value={formData.brandName} onChange={handleChange} />
+      </div>
+      <div className="form-group">
+        <label htmlFor="brandDescription">Кратко описание на бранда:</label>
+        <textarea id="brandDescription" name="brandDescription" required value={formData.brandDescription} onChange={handleChange}></textarea>
+      </div>
+      <div className="form-group">
+        <label htmlFor="website">Уебсайт:</label>
+        <input type="url" id="website" name="website" value={formData.website} onChange={handleChange} />
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">Имейл:</label>
+        <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange} />
+      </div>
+      <div className="form-group">
+        <label htmlFor="socialMediaHelp">Как би искал Social Media Steff да помогне на бизнеса ти?:</label>
+        <textarea id="socialMediaHelp" name="socialMediaHelp" required value={formData.socialMediaHelp} onChange={handleChange}></textarea>
+      </div>
+      <div>
+        
+      </div>
+      <div className="form-button">
+      <button>РАБОТИ С НАС</button>
+      </div>
+     
+    </form>
   );
 };
 

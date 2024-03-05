@@ -11,6 +11,21 @@
 /* 32px */
 /* 48px */
 /* 72px */
+.home-page-contant-form {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+}
+.home-page-contant-form > h1 {
+  font-size: 54px;
+  background-color: #F9447F;
+  color: #FFFBFB;
+  padding: 20px 50px;
+}
+
 .home-page-section {
   background-color: #FFFBFB;
   display: flex;
@@ -94,6 +109,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  margin: 30px 0;
 }
 
 .home-page-more {
@@ -112,7 +128,7 @@
   width: 100%;
 }
 .why-tiktok h1 {
-  font-size: 60px;
+  font-size: 54px;
   color: #FFFBFB;
   text-transform: uppercase;
   font-weight: 900;
@@ -163,7 +179,7 @@
 }
 .short-form-container h1 {
   color: #DDE468;
-  font-size: 60px;
+  font-size: 54px;
   font-weight: 900;
   margin-top: 30px;
 }
@@ -171,6 +187,7 @@
   color: #37343A;
   font-size: 30px;
   margin-bottom: 30px;
+  text-align: center;
 }
 .short-form-container .short-form-relative {
   position: relative;
@@ -259,10 +276,9 @@
 }
 .home-services-main-container > div p {
   text-align: center;
-  font-size: 20px;
 }
 .home-services-main-container > div h6 {
-  font-size: 28px;
+  font-size: 24px;
   color: #37343A;
 }
 .home-services-main-container > div .spacer {
@@ -333,7 +349,7 @@
   justify-content: center;
 }
 .why-social-media > h4 h1 {
-  font-size: 60px;
+  font-size: 54px;
   font-weight: 900;
   color: #F9447F;
   margin-left: 10px;
@@ -381,6 +397,7 @@
   display: flex;
   align-items: baseline;
   color: #37343A;
+  margin: 40px 0;
 }
 .home-page-brands .brands-title h1 {
   font-size: 54px;
@@ -402,10 +419,14 @@
 .home-page-results .home-page-results-title {
   display: flex;
   align-items: baseline;
+  max-width: 1280px;
+  width: 100%;
+  align-self: center;
+  margin: 40px 0;
 }
 .home-page-results .home-page-results-title img {
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
 }
 .home-page-results .home-page-results-title h1 {
   font-size: 54px;
@@ -498,7 +519,7 @@
 }
 @media (max-width: 1000px) {
   .home-services {
-    padding: 25px 10%;
+    margin: 30px 0;
   }
   .home-services-title {
     justify-content: center;
@@ -574,7 +595,7 @@
     gap: 2vw;
   }
   .home-services-main-container > div {
-    width: 40%;
+    width: 48%;
   }
   .home-services-main-container .reverse-col {
     flex-direction: column-reverse;
@@ -620,6 +641,15 @@
   }
 }
 @media (max-width: 750px) {
+  .home-page-banner > div {
+    padding: 30px 0;
+  }
+  .why-tiktok .why-tiktok-inner-container .why-tiktok-righ-side {
+    width: 100%;
+  }
+  .home-page-section > .home-page-brands {
+    padding: 0;
+  }
   .home-page-results .video-container {
     flex-wrap: wrap;
     gap: 4vw;
@@ -676,7 +706,7 @@
     justify-content: center;
   }
   .home-services-title h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .home-services-title img {
     width: 25px;
@@ -691,8 +721,8 @@
     height: 25vw;
   }
   .home-services-main-container > div p {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
   .home-services-main-container > div h6 {
     font-size: 14px;
@@ -714,27 +744,29 @@
   }
   .why-social-media {
     padding: 80px 0;
+    margin: 30px 0;
   }
   .why-social-media p {
-    font-size: 12px;
-    padding: 0 10%;
+    font-size: 16px;
   }
   .why-social-media img {
+    margin-top: 30px;
     width: 100%;
   }
   .home-page-banner > div h1 {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 22px;
+    line-height: 22px;
   }
   .home-page-banner > div h3 {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 12px;
   }
   .home-page-brands .brands-title h1 {
     font-size: 25px;
   }
   .home-page-brands .brands-title h3 {
     font-size: 16px;
+    text-align: center;
     font-weight: 400;
   }
   .home-page-results .home-page-results-title h1 {
