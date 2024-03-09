@@ -53,7 +53,6 @@ const HomePage = () => {
 
   return (
     <section className="home-page-section">
-      <img src={circle}></img>
       <div className="homepage-container">
         <div>
           <img className="heart" src={heart}></img>
