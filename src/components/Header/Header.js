@@ -60,7 +60,7 @@ function Header() {
           ""
         ) : (
           <Overlay onClose={closeBurger}>
-            <NavBar />
+            <NavBar  onClose={closeBurger} />
           </Overlay>
         )}
       </div>

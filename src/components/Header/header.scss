@@ -1,7 +1,10 @@
+@use '../../asstes/css/variables.scss' as helpers;
+
 @font-face {
   font-family: 'Kraimorie';
   src: url('../../asstes/fonts/92zPtBhPNqw79Ij1E865zBUv7myRJTVFNIg8mg.woff2');
 }
+
 
 header {
   width: 100%;
@@ -63,7 +66,7 @@ header.sticky {
 }
 
 .burger {
-  color: #80CC82;
+  color: helpers.$pinkColor;
 }
 
 @media (max-width: 1000px) {

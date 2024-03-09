@@ -35,6 +35,19 @@
             width: 100%;
             left: 0;
             transition: width 0.3s ease;
+            color: helpers.$pinkColor;
+          }
+          &:active:after {
+            width: 100%;
+            left: 0;
+            transition: width 0.3s ease;
+            
+          }
+          &:hover{
+            color: helpers.$pinkColor;
+          }
+          &::after{
+            color: helpers.$pinkColor;
           }
     }
 }

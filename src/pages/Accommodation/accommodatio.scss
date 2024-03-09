@@ -2,10 +2,154 @@
 @import '../../asstes/css/mixins';
 
 
-.accommodation-section {
-    padding: 120px helpers.$globalPadding;
+.trainigs-page{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: helpers.$white-color;
+    width: 100%;
+    flex-direction: column;
+    min-height: 60vh;
+    >h1{
+        font-size: 54px;
+        background-color:helpers.$pinkColor ;
+        color: helpers.$whiteColor;
+        padding:20px 50px ;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    >div{
+        width: 100%;
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        color: #37343A;
+        margin: 40px 0;
+    
+        h2 {
+          font-size: 54px;
+          font-weight: 900;
+        }
+    }
+    $color_1: #FFFFFF;
+
+.container {
+	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+}
+.content {
+	width: 360px;
+	height: 40px;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+	border-radius: 60px;
+	overflow: hidden;
+}
+.subscription {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	.add-email {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 0 20px;
+	}
+	.submit-email {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: calc(100% - 2px);
+		width: 100px;
+		border: none;
+		border-radius: 60px;
+		outline: none;
+		margin: 1px;
+		padding: 0 20px;
+		cursor: pointer;
+		background: helpers.$pinkColor;
+		color: $color_1;
+		transition: width .35s ease-in-out, background .35s ease-in-out;
+        
+		.before-submit {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			line-height: 38px;
+			transition: visibility .35s ease-in-out, opacity .35s ease-in-out;
+		}
+		.after-submit {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			line-height: 38px;
+			transition: visibility .35s ease-in-out, opacity .35s ease-in-out;
+			transition-delay: .35s;
+		}
+        &:active{
+            background: rgba(helpers.$pinkColor, 90%);
+        }
+        &:hover{
+            background: rgba(helpers.$pinkColor, 90%);
+        }
+	}
+	&:not(.done) {
+		.submit-email {
+			.after-submit {
+				visibility: hidden;
+				opacity: 0;
+			}
+			.before-submit {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+}
+.subscription.done {
+	.submit-email {
+		width: calc(100% - 2px);
+		background: #C0E02E;
+		.before-submit {
+			visibility: hidden;
+			opacity: 0;
+		}
+		.after-submit {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+
+}
+@media (max-width: 1000px) {
+    // 25px;
+    .trainigs-page > h1 {
+        font-size: 25px;
+    }
+    .trainigs-page > div h2 {
+        font-size: 25px;
+    }
+   
+}
+@media (max-width: 750px) {
+   
+    .trainigs-page .content {
+        width: 90vw;
+    }
 }

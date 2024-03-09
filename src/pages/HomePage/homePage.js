@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./homePage.scss";
-import heart from "../../asstes/images/heart.png";
 import hand from "../../asstes/images/hand.png";
 import DynamicButton from "../../components/DynamicButton/DynamicButton";
 import tunder from "../../asstes/images/tunder.png";
@@ -20,10 +19,11 @@ import whyTikTokVideo from "../../asstes/images/whyTikTok.mp4";
 import mainVideo from "../../asstes/images/mainVideo.mp4";
 import TypewriterComponent from "typewriter-effect";
 import AOS from "aos";
-import circle from "../../asstes/images/socailMediaSteffBanner.jpg"
+import circle from "../../asstes/images/socailMediaSteffBanner.jpg";
 import "aos/dist/aos.css";
 import ServicesContainer from "../../components/Services/ServicesContainer";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const HomePage = () => {
   useEffect(() => {
@@ -55,7 +55,6 @@ const HomePage = () => {
     <section className="home-page-section">
       <div className="homepage-container">
         <div>
-          <img className="heart" src={heart}></img>
           {!isMobile && (
             <>
               <p>full service TikTok агенция</p>
@@ -94,7 +93,9 @@ const HomePage = () => {
               <img src={hand} />
               повишат резултатите си
             </p>
-            <DynamicButton text="Работи с нас" />
+            <Link to="#work-with-us">
+              <DynamicButton text="Работи с нас" />
+            </Link>
           </div>
         </div>
         <video playsInline autoplay="autoplay" loop muted>
@@ -124,7 +125,7 @@ const HomePage = () => {
       <div className="home-page-more-container">
         <p className="home-page-more">
           Повече <strong>органино съдържание.</strong> Повече{" "}
-          <strong>стройност.</strong>Повече{" "}
+          <strong>стойност.</strong>Повече{" "}
           <strong>ангажирана аудитория.</strong>
         </p>
       </div>
@@ -176,8 +177,6 @@ const HomePage = () => {
         </div>
       </div>
       <>
-      
-
         <div className="short-form-container">
           <h1>SHORT FORM ВИДЕО</h1>
           <h3>КАКВО СЕДИ ЗАД КРАЙНИЯ РЕЗУЛТАТ</h3>
@@ -240,7 +239,7 @@ const HomePage = () => {
               УСЛУГИ
             </h1>
           </div>
-          <ServicesContainer/>
+          <ServicesContainer />
         </div>
         <div id="aboutus" className="why-social-media">
           <h4 data-aos="fade-up" data-aos-duration="1000">
@@ -290,7 +289,7 @@ const HomePage = () => {
           </div>
           <BrandSlider brands={brands}></BrandSlider>
         </div>
-        <div className="home-page-results">
+        <div  className="home-page-results">
           <div className="home-page-results-title">
             <img src={rock}></img>
             <h1>TIKTOK</h1>
@@ -334,11 +333,16 @@ const HomePage = () => {
               <source src={video4} type="video/mp4" />
             </video>
           </div>
-        </div>
-        <div className="home-page-contant-form">
-          <h1>РАБОТИ С НАС</h1>
-          <p>Попълни долните полета с нужната информация, която да ни запознаем с бранда ти предварително. След като получим запитването, ние ще се свържем с теб, за да организираме опознавателна среща, в която да разберем как можем да сме ти от полза.</p>
-        <ContactForm></ContactForm>
+        </div >
+        <div id="work-with-us" className="home-page-contant-form" >
+          <h1 data-aos="fade-up" data-aos-duration="1000">РАБОТИ С НАС</h1>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            Попълни долните полета с нужната информация, която да ни запознаем с
+            бранда ти предварително. След като получим запитването, ние ще се
+            свържем с теб, за да организираме опознавателна среща, в която да
+            разберем как можем да сме ти от полза.
+          </p>
+          <ContactForm data-aos="fade-up" data-aos-duration="1000"/>
         </div>
       </>
     </section>

@@ -55,10 +55,16 @@
   .what-we-do {
     flex-direction: column;
     display: flex;
+p{
+  display: flex;
+  gap: 10px;
+  img {
+    width: 23px;
+    object-fit: contain;
+  }
+}
 
-    img {
-      width: 23px;
-    }
+   
 
     .butn-dark {
       margin-top: 78px;
@@ -928,6 +934,7 @@
     flex-direction: column;
     h1{
       font-size: 25px;
+      text-align: center;
     }
 }
 .why-social-media {
