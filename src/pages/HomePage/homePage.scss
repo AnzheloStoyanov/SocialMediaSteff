@@ -263,7 +263,7 @@ p{
       }
 
       h5 {
-        font-size: 25px;
+        font-size: 20px;
         color: #37343A;
       }
     }
@@ -660,7 +660,7 @@ p{
 
 @media (max-width: 1555px) {
   .short-form-container .short-form-relative .poiners h5 {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -714,6 +714,8 @@ p{
     align-self: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
   }
 
   .home-page-more-container {
@@ -824,6 +826,11 @@ p{
 }
 
 @media (max-width: 750px) {
+  .short-form-container h3 {
+   
+    font-size: 16px;
+   
+}
   .home-page-results .video-container > div .result-min-container img {
     width: 11px;
   }
