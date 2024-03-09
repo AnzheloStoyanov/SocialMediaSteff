@@ -20,7 +20,7 @@ import whyTikTokVideo from "../../asstes/images/whyTikTok.mp4";
 import mainVideo from "../../asstes/images/mainVideo.mp4";
 import TypewriterComponent from "typewriter-effect";
 import AOS from "aos";
-import circle from "../../asstes/images/circle.svg"
+import circle from "../../asstes/images/socailMediaSteffBanner.jpg"
 import "aos/dist/aos.css";
 import ServicesContainer from "../../components/Services/ServicesContainer";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -53,6 +53,7 @@ const HomePage = () => {
 
   return (
     <section className="home-page-section">
+      <img src={circle}></img>
       <div className="homepage-container">
         <div>
           <img className="heart" src={heart}></img>
