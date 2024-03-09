@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.scss";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faTiktok,faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import logo from "../../asstes/images/Logo.png"
@@ -14,9 +14,7 @@ const Footer = () => {
             <div class="footer-column footer-about">
               <img className="logo-gooter" src={logo}></img>
               <p class="footer-about-text">
-                Заобиколен от китна растителност и в комбинация с първа линия
-                море, Крайморие парк предоставя спокойствие и уют на своите
-                клиенти.
+              Social Media Steff е бутикова видео маркетинг агенция, която помага на бизнеси в различни ниши да достигнат до правилната аудитория в TikTok, създавайки интересно и стойностно съдържание.
               </p>
             </div>
           </div>
@@ -28,42 +26,48 @@ const Footer = () => {
                   <a href='#aboutus'>За нас</a>
                 </li>
                 <li>
-                  <a href="rooms.html">Настаняване</a>
+                  <a href="rooms.html">Резултати</a>
                 </li>
                 <li>
-                  <a href="prices.html">Цени</a>
+                  <a href="prices.html">Услуги</a>
                 </li>
                 <li>
-                  <a href="gallery.html">Галерия</a>
+                  <a href="gallery.html">Блог</a>
                 </li>
                 <li>
-                  <a href="contacts.html">Контакти</a>
+                  <a href="contacts.html">Обучения</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col">
             <div class="footer-column footer-contact">
-              <h3 class="footer-title">Контакти</h3>
-              <p class="footer-contact-text">гр. Бургас, кв. Крайморие</p>
+              <h3 class="footer-title">Адрес</h3>
+              <p class="footer-contact-text">гр. Перник, ул. Св. Св Кирил и Методий 23 2300</p>
               <div class="footer-contact-info">
-                <p class="footer-contact-phone">
-                  <span class="flaticon-call"><FontAwesomeIcon icon={faPhone} /></span> +359 899 77 75 75
-                </p>
-                <p class="footer-contact-mail">kraimoriepark@gmail.com</p>
+                <a href = "mailto: office@socialmediasteff.com">office@socialmediasteff.com</a>
               </div>
+              <h3 class="footer-title">Свържи се с нас!</h3>
               <div class="footer-contact-social-list">
+              <a
+                  href="https://www.instagram.com/socialmediasteff/" target="_blank"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=100081960582239"
-                  target="_blank"
+                  href=" https://www.facebook.com/socialmediasteff" target="_blank"
                 >
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
                 <a
-                  href="https://www.instagram.com/kraimorie_park/"
-                  target="_blank"
+                  href="https://www.tiktok.com/@socialmediasteff" target="_blank"
                 >
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon icon={faTiktok} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/socialmediasteff" target="_blank" 
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </div>
             </div>
@@ -72,10 +76,7 @@ const Footer = () => {
       </div>
       <div className="bottom-line-footer">
         <p class="footer-bottom-copy-right">
-          © 2023 | Изработка на сайт:
-          <a href="https://www.diesweb.eu/" target="_blank">
-            Дигитална агенция STENZHI
-          </a>
+          © 2024 Social Media Steff | All rights reserved
         </p>
       </div>
     </footer>

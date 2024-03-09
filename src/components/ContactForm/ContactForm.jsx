@@ -24,9 +24,9 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    const API_BASE_URL = "https://soacial-media-api.vercel.app";
     // Use Axios to send a POST request
-    axios.post('https://soacial-media-api.vercel.app/submit', formData)
+    axios.post('http://soacial-media-api.vercel.app/submit', formData)
       .then(response => {
         setSubmissionSuccess(true)
           // Hide the success message after 5 seconds

@@ -6,7 +6,20 @@ footer {
     }
     box-sizing: border-box;
 
-
+    .footer-contact-info{
+        a{
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin: 3px;
+            transition: all 0.4s;
+            position: relative;
+            display: block;
+            font-size: 15px;
+            color: #37343A;
+            transition: all 500ms ease;
+        }
+    }
 
     .main-footer-container {
         display: flex;
@@ -59,21 +72,29 @@ footer {
             }
 
             &-text {
+                position: relative;
+                display: block;
                 font-size: 15px;
-                margin: 0;
-                color: helpers.$blackColor;
-                padding-bottom: 20px;
+                color: #37343A;
+                transition: all 500ms ease;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 1px;
+                color: #37343A;
+                margin: 3px;
+                transition: all 0.4s;
             }
 
             &-social-list {
                 a {
                     .svg-inline--fa {
-                        font-size: 15;
-                        color: helpers.$white-color;
+                        font-size: 25px;
+                        color: helpers.$blackColor;
                         transition: all 500ms ease;
 
                         &:hover {
-                            color: helpers.$mainColor;
+                            color: helpers.$pinkColor;
                         }
                     }
                 }
@@ -173,6 +194,9 @@ footer {
 
 @media screen and (max-width: 1000px) {
     footer {
+        .logo-gooter{
+            width: 30vw;
+        }
         .main-footer-container {
             .row {
                 flex-direction: column;
@@ -187,7 +211,6 @@ footer {
                         a {
                             .svg-inline--fa {
                                 font-size: 25px;
-                                color: helpers.$white-color;
                                 transition: all 500ms ease;
         
                                 &:hover {
