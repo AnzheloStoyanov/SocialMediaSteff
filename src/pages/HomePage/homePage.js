@@ -303,11 +303,11 @@ const HomePage = () => {
                   <span>576K</span>
                 </div>
                 <div>
-                  <img src={comments} />
+                  <img src={resultsHeart} />
                   <span>37.8К</span>
                 </div>
                 <div>
-                  <img src={resultsHeart} />
+                <img src={comments} />
                   <span>366</span>
                 </div>
                 
@@ -355,7 +355,7 @@ const HomePage = () => {
                   <span>386K</span>
                 </div>
                 <div>
-                  <img src={comments} />
+                  <img src={resultsHeart} />
                   <span>19.8К</span>
                 </div>
                 <div>
@@ -385,7 +385,7 @@ const HomePage = () => {
                   <span>18.4К</span>
                 </div>
                 <div>
-                  <img src={resultsHeart} />
+                  <img src={comments} />
                   <span>146</span>
                 </div>
                 
