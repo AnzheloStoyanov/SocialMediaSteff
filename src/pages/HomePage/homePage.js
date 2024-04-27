@@ -24,6 +24,7 @@ import "aos/dist/aos.css";
 import ServicesContainer from "../../components/Services/ServicesContainer";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import { HashLink as Link } from "react-router-hash-link";
+import TikTokComponentResults from "../../components/TikTokComponentResults/TikTokComponentResults";
 
 const HomePage = () => {
   useEffect(() => {
@@ -289,119 +290,7 @@ const HomePage = () => {
           </div>
           <BrandSlider brands={brands}></BrandSlider>
         </div>
-        <div className="home-page-results">
-          <div className="home-page-results-title">
-            <img src={rock}></img>
-            <h1>TIKTOK</h1>
-            <h3>РЕЗУЛТАТИ</h3>
-          </div>
-          <div className="video-container">
-            <div>
-              <div className="result-min-container">
-              <div>
-                  <img className="play" src={playResults} />
-                  <span>576K</span>
-                </div>
-                <div>
-                  <img src={resultsHeart} />
-                  <span>37.8К</span>
-                </div>
-                <div>
-                <img src={comments} />
-                  <span>366</span>
-                </div>
-                
-              </div>
-              <video
-                className="home-page-results-video"
-                playsInline
-                autoplay="autoplay"
-                loop
-                muted
-              >
-                <source src={video4} type="video/mp4" />
-              </video>
-            </div>
-            <div>
-            <div className="result-min-container">
-              <div>
-                  <img className="play" src={playResults} />
-                  <span>411K</span>
-                </div>
-                <div>
-                  <img src={comments} />
-                  <span>11.2К</span>
-                </div>
-                <div>
-                  <img src={save} />
-                  <span>1123</span>
-                </div>
-                
-              </div>
-              <video
-                className="home-page-results-video"
-                playsInline
-                autoplay="autoplay"
-                loop
-                muted
-              >
-                <source src={video2} type="video/mp4" />
-              </video>
-            </div>
-            <div>
-            <div className="result-min-container">
-              <div>
-                  <img className="play" src={playResults} />
-                  <span>386K</span>
-                </div>
-                <div>
-                  <img src={resultsHeart} />
-                  <span>19.8К</span>
-                </div>
-                <div>
-                  <img src={save} />
-                  <span>3809</span>
-                </div>
-                
-              </div>
-              <video
-                className="home-page-results-video"
-                playsInline
-                autoplay="autoplay"
-                loop
-                muted
-              >
-                <source src={video3} type="video/mp4" />
-              </video>
-            </div>
-            <div>
-            <div className="result-min-container">
-              <div>
-                  <img className="play" src={playResults} />
-                  <span>1M</span>
-                </div>
-                <div>
-                  <img src={comments} />
-                  <span>18.4К</span>
-                </div>
-                <div>
-                  <img src={comments} />
-                  <span>146</span>
-                </div>
-                
-              </div>
-              <video
-                className="home-page-results-video"
-                playsInline
-                autoplay="autoplay"
-                loop
-                muted
-              >
-                <source src={video} type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
+        <TikTokComponentResults/>
         <div id="work-with-us" className="home-page-contant-form">
           <h1 data-aos="fade-up" data-aos-duration="1000">
             РАБОТИ С НАС

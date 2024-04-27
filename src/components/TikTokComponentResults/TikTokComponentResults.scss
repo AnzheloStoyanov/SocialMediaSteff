@@ -1,0 +1,110 @@
+@use '../../asstes/css/variables.scss' as helpers;
+@import '../../asstes/css/mixins';
+
+
+.home-page-results {
+    padding: 10px 0%;
+    width: 100%;
+    background-color: helpers.$pinkColor;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+  
+    .home-page-results-title {
+      display: flex;
+      align-items: baseline;
+      max-width: 1280px;
+      width: 100%;
+      align-self: center;
+      margin: 40px 0;
+    
+  
+      img {
+        width: 3vw;
+        height: 3vw;
+      }
+  
+      h1 {
+        font-size: 54px;
+        font-weight: 800;
+        line-height: 54px;
+        color: helpers.$whiteColor;
+        margin-right: 20px;
+      }
+  
+      h3 {
+        font-size: 57px;
+        line-height: 57px;
+        color: #DDE468;
+      }
+    }
+  
+    .video-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1280px;
+      align-self: center;
+      align-items: center;
+      >div {
+        width: 22%;
+        .result-min-container{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 10px;
+          >div{
+            display: flex;
+            align-items: center;
+          }
+          span{
+            color: helpers.$whiteColor;
+          }
+          img{
+            width: 18px;
+            object-fit: contain;
+            margin-right: 3px
+          }
+          .play{
+            width: 14px;
+          }
+        }
+        >video{
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    .home-page-results .home-page-results-title{
+        h1 {
+          font-size: 25px;
+          margin-right: 5px
+        }
+        h3 {
+          font-size: 25px;
+        }
+      }
+      .home-page-results {
+        .video-container {
+          flex-wrap: wrap;
+          gap: 4vw;
+          >div {
+            width: 38vw;
+            .result-min-container{
+              display: flex;
+              justify-content: space-between;
+              span{
+                color: helpers.$whiteColor;
+                font-size: 10px;
+              }
+            }
+            >video{
+              width: 100%;
+            }
+          }
+      }
+      .home-page-results-title {
+      justify-content: center;
+      }
+    }
+  }

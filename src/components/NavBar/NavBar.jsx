@@ -41,6 +41,11 @@ const NavBar = ({ children, onClose }) => {
         </Link>
       </li> */}
       <li class="nav-item">
+        <Link to="/tiktok-results"  onClick={close}>
+            Резултати
+        </Link>
+      </li>
+      <li class="nav-item">
         <Link to="/trainings"  onClick={close}>
             Обучения
         </Link>
@@ -72,6 +77,11 @@ const NavBar = ({ children, onClose }) => {
             Блог
         </Link>
       </li> */}
+      <li class="nav-item">
+        <Link to="/tiktok-results"  onClick={close}>
+            Резултати
+        </Link>
+      </li>
       <li class="nav-item">
         <Link to="/trainings">
             Обучения
