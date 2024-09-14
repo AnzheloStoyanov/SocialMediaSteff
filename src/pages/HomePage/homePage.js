@@ -59,7 +59,7 @@ const HomePage = () => {
         <title>Social Media Steff - TikTok Маркетинг Агенция</title>
         <meta
           name="description"
-          content="Social Media Steff е бутикова видео маркетинг агенция, която помага на бизнеси да стъпят на TikTok сцената и да постигнат по-голяма разпознаваемост и лоялна аудитория."
+          content="ТикТок агенция Social Media Steff: Помагаме на бизнеса да увеличи разпознаваемостта си, достигне нова аудитория и постигне отлични резултати с качествено видео съдържание."
         />
         <meta name="keywords" content="тикток, маркетинг, агенция, социални медии, видео маркетинг" />
         <meta property="og:title" content="Social Media Steff - TikTok Маркетинг Агенция" />
