@@ -87,8 +87,8 @@ const HomePage = () => {
                 "@type": "ContactPoint",
                 "telephone": "+1-800-123-4567",
                 "contactType": "Customer Service",
-                "areaServed": "US",
-                "availableLanguage": "English"
+                "areaServed": "BG",
+                "availableLanguage": "Bulgarian"
               }
             }
           `}
