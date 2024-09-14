@@ -79,19 +79,19 @@ const HomePage = () => {
           <div className="what-we-do">
             <p>Помагаме на бизнесите да стъпят на TikTok сцената, за да:</p>
             <p>
-              <img src={hand} />
+              <img src={hand} alt="Тик ток маркетинг ръчичка" />
               увеличат разпознаваемостта на бранда си
             </p>
             <p>
-              <img src={hand} />
+              <img src={hand} alt="Тик ток маркетинг агенция"/>
               достигнат до нова аудитория
             </p>
             <p>
-              <img src={hand} />
+              <img src={hand} alt="Тик ток маркетинг ръка" />
               изградят лоялна общност
             </p>
             <p>
-              <img src={hand} />
+              <img src={hand} alt="Тик ток маркетинг стъпка" />
               повишат резултатите си
             </p>
             <Link to="#work-with-us">
@@ -235,7 +235,7 @@ const HomePage = () => {
         </div>
         <div id="services" className="home-services">
           <div className="home-services-title">
-            <img src={tunder}></img>
+            <img src={tunder} alt="Тик ток маркетинг сеткавица"></img>
             <h1 data-aos="fade-up" data-aos-duration="1000">
               УСЛУГИ
             </h1>

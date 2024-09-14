@@ -14,7 +14,7 @@ import rock from "../../asstes/images/rock.png";
 const TikTokComponentResults = () => {
   return  <div className="home-page-results">
   <div className="home-page-results-title">
-    <img src={rock}></img>
+    <img src={rock} alt="Тик ток маркетинг агенция резултати"></img>
     <h1>TIKTOK</h1>
     <h3>РЕЗУЛТАТИ</h3>
   </div>
@@ -22,15 +22,15 @@ const TikTokComponentResults = () => {
     <div>
       <div className="result-min-container">
       <div>
-          <img className="play" src={playResults} />
+          <img className="play" src={playResults} alt="Тик ток маркетинг агенция плей буттон" />
           <span>576K</span>
         </div>
         <div>
-          <img src={resultsHeart} />
+          <img src={resultsHeart} alt="Тик ток маркетинг агенция сърце"/>
           <span>37.8К</span>
         </div>
         <div>
-        <img src={comments} />
+        <img src={comments} alt="Тик ток маркетинг коментар" />
           <span>366</span>
         </div>
         
