@@ -77,7 +77,7 @@ const HomePage = () => {
               "@type": "Organization",
               "name": "Social Media Steff",
               "url": "https://www.socialmediasteff.com",
-              "logo": "https://www.socialmediasteff.com/static/media/Logo.6dfa703fbd2ad749ec78.png",
+              "logo": "https://www.socialmediasteff.com/static/media/socailMediaSteffBanner.480e518928d0551d75cb.jpg",
               "sameAs": [
                 "https://www.facebook.com/socialmediasteff",
                 "https://www.instagram.com/socialmediasteff",
