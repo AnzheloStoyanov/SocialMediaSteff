@@ -70,6 +70,29 @@ const HomePage = () => {
         <meta name="twitter:description" content="Бутикова видео маркетинг агенция, която помага на брандове да създадат качествено TikTok съдържание и да достигнат нова аудитория." />
         <meta name="twitter:image" content={socialMediaSteff} />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Social Media Steff",
+              "url": "https://www.socialmediasteff.com",
+              "logo": "https://www.socialmediasteff.com/static/media/Logo.6dfa703fbd2ad749ec78.png",
+              "sameAs": [
+                "https://www.facebook.com/socialmediasteff",
+                "https://www.instagram.com/socialmediasteff",
+                "https://www.linkedin.com/company/socialmediasteff"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-800-123-4567",
+                "contactType": "Customer Service",
+                "areaServed": "US",
+                "availableLanguage": "English"
+              }
+            }
+          `}
+        </script>
       </Helmet>
       <div className="homepage-container">
         <div>
