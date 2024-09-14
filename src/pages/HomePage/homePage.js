@@ -3,6 +3,7 @@ import "./homePage.scss";
 import hand from "../../asstes/images/hand.png";
 import DynamicButton from "../../components/DynamicButton/DynamicButton";
 import tunder from "../../asstes/images/tunder.png";
+import { Helmet } from 'react-helmet-async';  // Import Helmet for SEO
 import save from "../../asstes/images/save.png";
 import playResults from "../../asstes/images/playResults.png";
 import resultsHeart from "../../asstes/images/resultsHeart.png";
@@ -54,6 +55,22 @@ const HomePage = () => {
 
   return (
     <section className="home-page-section">
+      <Helmet>
+        <title>Social Media Steff - TikTok Маркетинг Агенция</title>
+        <meta
+          name="description"
+          content="Social Media Steff е бутикова видео маркетинг агенция, която помага на бизнеси да стъпят на TikTok сцената и да постигнат по-голяма разпознаваемост и лоялна аудитория."
+        />
+        <meta name="keywords" content="тикток, маркетинг, агенция, социални медии, видео маркетинг" />
+        <meta property="og:title" content="Social Media Steff - TikTok Маркетинг Агенция" />
+        <meta property="og:description" content="Помагаме на бизнесите да стъпят на TikTok сцената, да достигнат нова аудитория и да повишат резултатите си." />
+        <meta property="og:image" content={socialMediaSteff} />
+        <meta property="og:url" content="https://www.socialmediasteff.com" />
+        <meta name="twitter:title" content="Social Media Steff - TikTok Маркетинг Агенция" />
+        <meta name="twitter:description" content="Бутикова видео маркетинг агенция, която помага на брандове да създадат качествено TikTok съдържание и да достигнат нова аудитория." />
+        <meta name="twitter:image" content={socialMediaSteff} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <div className="homepage-container">
         <div>
           {!isMobile && (
