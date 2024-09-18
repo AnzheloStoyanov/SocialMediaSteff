@@ -5,10 +5,13 @@ import { nav } from "./core/navigation";
 import './App.css';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import { Analytics } from "@vercel/analytics/react"
+
 
 const App = () => {
   return (
     <HelmetProvider> {/* Wrap the entire app in HelmetProvider */}
+      <Analytics/>
       <Router>
         <Header />
         <Routes>
