@@ -15,7 +15,7 @@ const TikTokComponentResults = () => {
   return  <div className="home-page-results">
   <div className="home-page-results-title">
     <img src={rock} alt="Тик ток маркетинг агенция резултати"></img>
-    <h1>TIKTOK</h1>
+    <div className="h1">TIKTOK</div>
     <h3>РЕЗУЛТАТИ</h3>
   </div>
   <div className="video-container">

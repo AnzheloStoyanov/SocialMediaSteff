@@ -55,6 +55,7 @@ const HomePage = () => {
 
   return (
     <section className="home-page-section">
+      <h1 style={{ visibility: 'hidden', position:'absolute' }}>Тик ток реклама</h1>
       <Helmet>
         <title>Social Media Steff - TikTok Маркетинг Агенция</title>
         <meta
@@ -174,9 +175,9 @@ const HomePage = () => {
         <div class="round-bottom"></div>
       </div>
       <div className="why-tiktok">
-        <h1>
+        <div className="h1">
           Защо <strong> TikTok?</strong>
-        </h1>
+        </div>
         <div className="why-tiktok-inner-container">
           <video playsInline autoplay="autoplay" loop muted>
             <source src={whyTikTokVideo} type="video/mp4" />
@@ -219,7 +220,7 @@ const HomePage = () => {
       </div>
       <>
         <div className="short-form-container">
-          <h1>SHORT FORM ВИДЕО</h1>
+          <div className="h1">SHORT FORM ВИДЕО</div>
           <h3>КАКВО СЕДИ ЗАД КРАЙНИЯ РЕЗУЛТАТ</h3>
           <div className="short-form-relative">
             <div
@@ -284,7 +285,7 @@ const HomePage = () => {
         </div>
         <div id="aboutus" className="why-social-media">
           <h4 data-aos="fade-up" data-aos-duration="1000">
-            ЗАЩО <h1> SOCIAL MEDIA STEFF?</h1>
+            ЗАЩО <div className="h1"> SOCIAL MEDIA STEFF?</div>
           </h4>
           <p data-aos="fade-up" data-aos-duration="1000">
             Social Media Steff е бутикова видео маркетинг агенция, която създава
@@ -309,32 +310,32 @@ const HomePage = () => {
         </div>
         <div className="home-page-banner">
           <div>
-            <h1>20М+</h1>
+            <div className="h1">20М+</div>
             <h3>ГЛЕДАНИЯ</h3>
           </div>
           <div>
             <h3>НАД</h3>
-            <h1>1000</h1>
+            <div className="h1">1000</div>
             <h3>СЪЗДАДЕНИ</h3>
             <h3>ВИДЕА</h3>
           </div>
           <div>
-            <h1>900K+</h1>
+          <div className="h1">900K+</div>
             <h3>ХАРЕСВАНИЯ</h3>
           </div>
         </div>
         <div className="home-page-brands">
           <div className="brands-title">
-            <h1>БРАНДОВЕ,</h1>
+            <div className="h1">БРАНДОВЕ,</div>
             <h3>КОИТО НИ СЕ ДОВЕРИХА</h3>
           </div>
           <BrandSlider brands={brands}></BrandSlider>
         </div>
         <TikTokComponentResults/>
         <div id="work-with-us" className="home-page-contant-form">
-          <h1 data-aos="fade-up" data-aos-duration="1000">
+          <div className="h1" data-aos="fade-up" data-aos-duration="1000">
             РАБОТИ С НАС
-          </h1>
+          </div>
           <p data-aos="fade-up" data-aos-duration="1000">
             Попълни долните полета с нужната информация, която да ни запознаем с
             бранда ти предварително. След като получим запитването, ние ще се
