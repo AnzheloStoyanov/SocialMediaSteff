@@ -33,14 +33,14 @@ export default function BrandSlider() {
   })
   return (
     <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide">     <img src={insa}></img></div>
-      <div className="keen-slider__slide">     <img src={bash}></img></div>
-      <div className="keen-slider__slide">     <img src={coolClub}></img></div>
-      <div className="keen-slider__slide">     <img src={flip}></img></div>
-      <div className="keen-slider__slide">     <img src={kaufland}></img></div>
-      <div className="keen-slider__slide">     <img src={airSpice}></img></div>
-      {/* <div className="keen-slider__slide locker">     <img src={lockerRoom}></img></div> */}
-      <div className="keen-slider__slide">     <img src={funPoint}></img></div>
+      <div className="keen-slider__slide">     <img src={insa} alt=""></img></div>
+      <div className="keen-slider__slide">     <img src={bash} alt=""></img></div>
+      <div className="keen-slider__slide">     <img src={coolClub} alt=""></img></div>
+      <div className="keen-slider__slide">     <img src={flip} alt=""></img></div>
+      <div className="keen-slider__slide">     <img src={kaufland} alt=""></img></div>
+      <div className="keen-slider__slide">     <img src={airSpice} alt=""></img></div>
+      {/* <div className="keen-slider__slide locker">     <img src={lockerRoom} alt=""></img></div> */}
+      <div className="keen-slider__slide">     <img src={funPoint} alt=""></img></div>
       
     </div>
   )
