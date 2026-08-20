@@ -22,7 +22,7 @@ export default function Services() {
       <div className="services-page">
         <div className="home-services">
           <div className="home-services-title">
-            <img src={tunder}></img>
+            <img src={tunder} alt=""></img>
             <h1 data-aos-duration="1000">УСЛУГИ</h1>
           </div>
           <ServicesContainer />
@@ -30,7 +30,7 @@ export default function Services() {
         <div className="services-page__strategy strategy">
           <div>
             <div className="strategy__title">
-              <img src={lamp}></img>
+              <img src={lamp} alt=""></img>
               <h1>Strategy & Conception</h1>
               <h3>Креативна Видео Концепция</h3>
             </div>
@@ -45,31 +45,31 @@ export default function Services() {
             <div className="strategy__step">
               <div className="strategy__step__row">
                 <div className="carContainer">
-                  <img src={yourbrand}></img>
-                  <img src={car}></img>
+                  <img src={yourbrand} alt=""></img>
+                  <img src={car} alt=""></img>
                 </div>
                 <div className="celi_na_branda">
                   <div className="row__box">ЦЕЛИ НА БРАНДА</div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
                 <div className="celi_na_branda">
                   <div className="row__box">ТАРГЕТ АУДИТОРИЯ</div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
                 <div className="celi_na_branda">
                   <div className="row__box">
                     <span>ЛОКАЛНИ и ГЛОБАЛНИ</span> КОНКУРЕНТИ
                   </div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
                 <div className="celi_na_branda celi_na_branda--down">
                   <div className="row__box">ЗВУЧЕНЕ НА БРАНДА В TikTok</div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
               </div>
               <div className="strategy__step__row">
                 <div className="carContainer">
-                  <img src={finalFlag}></img>
+                  <img src={finalFlag} alt=""></img>
                 </div>
 
                 <div className="celi_na_branda celi_na_branda--left">
@@ -77,19 +77,19 @@ export default function Services() {
                     ПОСТИНГ
                     <br /> ПЛАН
                   </div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
                 <div className="celi_na_branda celi_na_branda--left">
                   <div className="row__box">ВИДЕО КОНЦЕПЦИЯ</div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
                 <div className="celi_na_branda celi_na_branda--left">
                   <div className="row__box">ВИЗИЯ И ОФОРМЛЕНИЕ</div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
                 <div className="celi_na_branda celi_na_branda--left">
                   <div className="row__box">ДОБРИ ПРАКТИКИ</div>
-                  <img className="row__img" src={arrowRight}></img>
+                  <img className="row__img" src={arrowRight} alt=""></img>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function Services() {
         <div className="services-page__content_creation">
           <div>
             <div className="creation__title">
-              <img src={camera}></img>
+              <img src={camera} alt=""></img>
               <h1>Content Creation</h1>
               <h3>Създаване на съдържание</h3>
             </div>
@@ -117,7 +117,7 @@ export default function Services() {
               <div className="content_creation__innerContainer_wrapper">
                 <div className="content_creation__innerContainer_luch"/>
               </div>
-              <img src={yourbrandIsHere}/>
+              <img src={yourbrandIsHere} alt=""/>
             </div>
           </div>
         </div>

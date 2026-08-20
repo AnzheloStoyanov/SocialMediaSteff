@@ -30,7 +30,7 @@ export default function RoomCard({ id }) {
 									<div class="col-md-6 gallery__item" key={index}>
 										<div class="gallery__box">
 											<div class="gallery__img">
-												<img src={img} class="gallery__image" />
+												<img src={img} class="gallery__image" alt="" />
 											</div>
 										</div>
 									</div>

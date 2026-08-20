@@ -23,7 +23,7 @@ export default function Sliders({images,height,navigate})  {
                 <div key={idx} className="fader__slide"  style={{ opacity: opacities[idx] }}>
                     <div className="text"></div>
                     <div className="back-ground"></div>
-                    <img src={e.src} />
+                    <img src={e.src} alt="" />
                     <div className="text">
                         <h4>{e?.text}</h4>
                         <h1 className="header">{e?.header}</h1>

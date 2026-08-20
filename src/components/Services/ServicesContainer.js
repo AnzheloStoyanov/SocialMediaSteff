@@ -36,14 +36,14 @@ export default function ServicesContainer({ content }) {
         <div className="spacer"></div>
         <div className="big-pink">
           <div className="small-pink">
-            <img className="lamp" src={lamp}></img>
+            <img className="lamp" src={lamp} alt=""></img>
           </div>
         </div>
       </div>
       <div>
         <div className="big-yellow">
           <div className="small-yellow">
-            <img className="lamp" src={camera}></img>
+            <img className="lamp" src={camera} alt=""></img>
           </div>
         </div>
         <div className="spacer-yellow"></div>
@@ -63,7 +63,7 @@ export default function ServicesContainer({ content }) {
           <div className="spacer"></div>
           <div className="big-pink">
             <div className="small-pink">
-              <img className="lamp" src={girl}></img>
+              <img className="lamp" src={girl} alt=""></img>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function ServicesContainer({ content }) {
           <div className="spacer"></div>
           <div className="big-pink">
             <div className="small-pink">
-              <img className="lamp" src={girl}></img>
+              <img className="lamp" src={girl} alt=""></img>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function ServicesContainer({ content }) {
         <div className="reverse-col">
           <div className="big-yellow">
             <div className="small-yellow">
-              <img className="lamp" src={voice}></img>
+              <img className="lamp" src={voice} alt=""></img>
             </div>
           </div>
           <div className="spacer-yellow"></div>
@@ -102,7 +102,7 @@ export default function ServicesContainer({ content }) {
         <div className="reverse-col">
           <div className="big-yellow">
             <div className="small-yellow">
-              <img className="lamp" src={voice}></img>
+              <img className="lamp" src={voice} alt=""></img>
             </div>
           </div>
           <div className="spacer-yellow"></div>

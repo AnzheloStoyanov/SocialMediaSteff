@@ -29,27 +29,27 @@ export default function TikTokResults() {
         <div className="titles-and-stats">
           <div className="logoAndTitle">
             <div className="brand-wrapper brand-wrapper--insa">
-              <img src={insaOil}></img>
+              <img src={insaOil} alt=""></img>
             </div>
             <h1>Insa Oil</h1>
           </div>
           <div className="statistics_wrapper">
             <div className="single_stat">
-              <img src={play} />
+              <img src={play} alt="" />
               <div>
                 <h1>4M </h1>
                 <span>гледания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={heart} />
+              <img src={heart} alt="" />
               <div>
                 <h1>150K </h1>
                 <span>харесвания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={followersBig} />
+              <img src={followersBig} alt="" />
               <div>
                 <h1>+10K </h1>
                 <span>последователи</span>
@@ -68,27 +68,27 @@ export default function TikTokResults() {
         <div className="titles-and-stats">
           <div className="logoAndTitle">
             <div className="brand-wrapper">
-              <img src={lockerLogo}></img>
+              <img src={lockerLogo} alt=""></img>
             </div>
             <h1>Locker Room</h1>
           </div>
           <div className="statistics_wrapper">
             <div className="single_stat">
-              <img src={play} />
+              <img src={play} alt="" />
               <div>
                 <h1>18M </h1>
                 <span>гледания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={heart} />
+              <img src={heart} alt="" />
               <div>
                 <h1>387.2K </h1>
                 <span>харесвания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={followersBig} />
+              <img src={followersBig} alt="" />
               <div>
                 <h1>+70K </h1>
                 <span>последователи</span>
@@ -107,27 +107,27 @@ export default function TikTokResults() {
         <div className="titles-and-stats">
           <div className="logoAndTitle">
             <div className="brand-wrapper">
-              <img src={coolClub}></img>
+              <img src={coolClub} alt=""></img>
             </div>
             <h1>Cool Club</h1>
           </div>
           <div className="statistics_wrapper">
             <div className="single_stat">
-              <img src={play} />
+              <img src={play} alt="" />
               <div>
                 <h1>1.1M </h1>
                 <span>гледания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={heart} />
+              <img src={heart} alt="" />
               <div>
                 <h1>35K </h1>
                 <span>харесвания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={followersBig} />
+              <img src={followersBig} alt="" />
               <div>
                 <h1>+4.3K </h1>
                 <span>последователи</span>
@@ -146,27 +146,27 @@ export default function TikTokResults() {
         <div className="titles-and-stats">
           <div className="logoAndTitle">
             <div className="brand-wrapper">
-              <img src={vipNet}></img>
+              <img src={vipNet} alt=""></img>
             </div>
             <h1>VipNet</h1>
           </div>
           <div className="statistics_wrapper">
             <div className="single_stat">
-              <img src={play} />
+              <img src={play} alt="" />
               <div>
                 <h1>1.5M </h1>
                 <span>гледания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={heart} />
+              <img src={heart} alt="" />
               <div>
                 <h1>64.6K </h1>
                 <span>харесвания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={followersBig} />
+              <img src={followersBig} alt="" />
               <div>
                 <h1>+10.9K </h1>
                 <span>последователи</span>
@@ -185,20 +185,20 @@ export default function TikTokResults() {
         <div className="titles-and-stats">
           <div className="logoAndTitle">
             <div className="brand-wrapper">
-              <img src={chokohLogo}></img>
+              <img src={chokohLogo} alt=""></img>
             </div>
             <h1>ChocOh!</h1>
           </div>
           <div className="statistics_wrapper">
             <div className="single_stat">
-              <img src={play} />
+              <img src={play} alt="" />
               <div>
                 <h1>2M </h1>
                 <span>гледания</span>
               </div>
             </div>
             <div className="single_stat single_stat--heart">
-              <img src={heart} />
+              <img src={heart} alt="" />
               <div>
                 <h1>21K </h1>
                 <span>харесвания</span>

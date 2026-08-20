@@ -48,15 +48,15 @@ const TikTokComponentResults = () => {
     <div>
     <div className="result-min-container">
       <div>
-          <img className="play" src={playResults} />
+          <img className="play" src={playResults} alt="" />
           <span>411K</span>
         </div>
         <div>
-          <img src={comments} />
+          <img src={comments} alt="" />
           <span>11.2К</span>
         </div>
         <div>
-          <img src={save} />
+          <img src={save} alt="" />
           <span>1123</span>
         </div>
         
@@ -74,15 +74,15 @@ const TikTokComponentResults = () => {
     <div>
     <div className="result-min-container">
       <div>
-          <img className="play" src={playResults} />
+          <img className="play" src={playResults} alt="" />
           <span>386K</span>
         </div>
         <div>
-          <img src={resultsHeart} />
+          <img src={resultsHeart} alt="" />
           <span>19.8К</span>
         </div>
         <div>
-          <img src={save} />
+          <img src={save} alt="" />
           <span>3809</span>
         </div>
         
@@ -100,15 +100,15 @@ const TikTokComponentResults = () => {
     <div>
     <div className="result-min-container">
       <div>
-          <img className="play" src={playResults} />
+          <img className="play" src={playResults} alt="" />
           <span>1M</span>
         </div>
         <div>
-          <img src={comments} />
+          <img src={comments} alt="" />
           <span>18.4К</span>
         </div>
         <div>
-          <img src={comments} />
+          <img src={comments} alt="" />
           <span>146</span>
         </div>
         

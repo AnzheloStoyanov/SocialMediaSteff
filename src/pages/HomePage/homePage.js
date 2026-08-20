@@ -305,7 +305,7 @@ const HomePage = () => {
           <img
             data-aos="fade-up"
             data-aos-duration="1000"
-            src={socialMediaSteff}
+            src={socialMediaSteff} alt=""
           ></img>
         </div>
         <div className="home-page-banner">

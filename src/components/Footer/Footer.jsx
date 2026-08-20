@@ -12,7 +12,7 @@ const Footer = () => {
         <div class="row">
           <div class="col">
             <div class="footer-column footer-about">
-              <img className="logo-gooter" src={logo}></img>
+              <img className="logo-gooter" src={logo} alt=""></img>
               <p class="footer-about-text">
               Social Media Steff е бутикова видео маркетинг агенция, която помага на бизнеси в различни ниши да достигнат до правилната аудитория в TikTok, създавайки интересно и стойностно съдържание.
               </p>
